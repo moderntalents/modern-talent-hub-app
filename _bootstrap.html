@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<!-- saved from url=(0194)https://a1666af0-79a4-4a47-a5b6-c7c4708f4741.claudeusercontent.com/v1/design/projects/a1666af0-79a4-4a47-a5b6-c7c4708f4741/serve/Modern%20Talent%20Hub%20App.dc.html?_omeo=https%3A%2F%2Fclaude.ai -->
+<html style="color-scheme: light;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+    .sc-placeholder{background:color-mix(in srgb,currentColor 8%,transparent);
+      border:1px solid color-mix(in srgb,currentColor 50%,transparent);
+      border-radius:2px;box-sizing:border-box;overflow:hidden}
+    @keyframes sc-shine{0%{background-position:100% 50%}100%{background-position:0% 50%}}
+    html.sc-dc-streaming .sc-placeholder,
+    html.sc-dc-streaming .sc-interp.sc-missing{position:relative;
+      background:color-mix(in srgb,currentColor 5%,transparent);
+      border-color:transparent}
+    html.sc-dc-streaming .sc-placeholder::before,
+    html.sc-dc-streaming .sc-interp.sc-missing::before{content:'';
+      position:absolute;inset:0;pointer-events:none;
+      background:linear-gradient(90deg,rgba(217,119,87,0) 25%,rgba(247,225,211,.95) 37%,rgba(217,119,87,0) 63%);
+      background-size:400% 100%;animation:sc-shine 1.4s ease infinite}
+    html.sc-dc-streaming .sc-placeholder:nth-child(n+9 of .sc-placeholder)::before,
+    html.sc-dc-streaming .sc-interp.sc-missing:nth-child(n+9 of .sc-interp.sc-missing)::before{animation:none;
+      background:color-mix(in srgb,currentColor 8%,transparent)}
+    .sc-placeholder-error{padding:4px 8px;font:11px/1.4 ui-monospace,monospace;
+      color:color-mix(in srgb,currentColor 70%,transparent);word-break:break-word}
+    .sc-interp.sc-missing{display:inline-block;width:2em;height:1em;overflow:hidden;
+      vertical-align:text-bottom;background:rgba(255,255,255,.3);border:1px solid rgba(0,0,0,.5);
+      border-radius:2px;box-sizing:border-box;color:transparent;
+      user-select:none}
+    .sc-interp.sc-unresolved{font-family:ui-monospace,monospace;font-size:.85em;
+      color:color-mix(in srgb,currentColor 50%,transparent);
+      background:color-mix(in srgb,currentColor 10%,transparent);border-radius:3px;
+      padding:0 3px}
+    .sc-host.sc-has-error{position:relative}
+    .sc-logic-error{position:absolute;top:8px;left:8px;z-index:2147483647;max-width:60ch;
+      padding:6px 10px;background:#b00020;color:#fff;font:12px/1.4 ui-monospace,monospace;
+      border-radius:4px;white-space:pre-wrap;pointer-events:none}
+    /* Mirrors PRINT_BASELINE_CSS in apps/web deck-stage-export.ts — keep both
+       in sync until dc-runtime regains a build step. */
+    @media print {
+      @page { margin: 0.5cm; }
+      figure, table { break-inside: avoid; }
+      #dc-root, #dc-root > .sc-host { height: auto; }
+      *, *::before, *::after {
+        print-color-adjust: exact; -webkit-print-color-adjust: exact;
+        backdrop-filter: none !important; -webkit-backdrop-filter: none !important;
+        animation-delay: -99s !important; animation-duration: .001s !important;
+        animation-iteration-count: 1 !important; animation-fill-mode: both !important;
+        animation-play-state: running !important; transition-duration: 0s !important;
+      }
+    }
+  </style>
+<style data-omelette-injected="">html,body{background:transparent}</style><script data-omelette-injected="">(()=>{{const n=new URLSearchParams(location.search).get("theme");if(n==="light"||n==="dark"){document.documentElement.dataset.theme=n}}{if(new URLSearchParams(location.search).get("_omthumb")==="1"){const n=(f)=>{const g=f.focus;if(!g)return;f.focus=function(h){g.call(this,{...h,preventScroll:true})}};n(HTMLElement.prototype);n(SVGElement.prototype);if(typeof MathMLElement!=="undefined"){n(MathMLElement.prototype)}const d=(f)=>{f.removeAttribute("autofocus");f.inert=true;if(!(f instanceof HTMLElement))f.removeAttribute("tabindex")};const p=(f)=>{if(f.hasAttribute("autofocus"))d(f);for(const g of f.querySelectorAll("[autofocus]")){d(g)}};p(document.documentElement);new MutationObserver((f)=>{for(const g of f){for(const h of g.addedNodes){if(h.nodeType===1)p(h)}}}).observe(document,{childList:true,subtree:true})}}{const n=()=>{try{if(document.querySelector('meta[name="color-scheme"]'))return;const d=getComputedStyle(document.documentElement).getPropertyValue("color-scheme").trim();if(d&&d!=="normal")return;const p=(y)=>{if(!y)return null;const m=getComputedStyle(y).backgroundColor.match(/^rgba?\(\s*(\d+)[,\s]+(\d+)[,\s]+(\d+)(?:[,\s/]+([\d.]+%?))?\s*\)$/);if(!m)return null;const w=m[4]==null?1:parseFloat(m[4])/(m[4].endsWith("%")?100:1);if(w<0.99)return null;return[+m[1],+m[2],+m[3]]};const f=p(document.body)||p(document.documentElement);if(!f)return;const g=(y)=>{const m=y/255;return m<=0.04045?m/12.92:((m+0.055)/1.055)**2.4};const h=0.2126*g(f[0])+0.7152*g(f[1])+0.0722*g(f[2]);document.documentElement.style.setProperty("color-scheme",h<0.4?"dark":"light")}catch{}};if(document.readyState==="complete")n();else window.addEventListener("load",n)}var I=["https://claude.ai","https://preview.claude.ai","https://a1666af0-79a4-4a47-a5b6-c7c4708f4741.claudeusercontent.com"];var B=true;var K=false;var C=()=>{};if(K===true){try{const n=setTimeout.bind(window);const d=1e4;const p=15;const f=1e4;const g=120000;const h=200;const y=(o)=>{try{let r;if(typeof o==="string")r=o;else if(o instanceof URL)r=o.href;else if(typeof Request!=="undefined"&&o instanceof Request)r=o.url;else return null;if(!r)return null;const l=document.baseURI;const i=new URL(r,l);if(i.protocol!=="http:"&&i.protocol!=="https:")return null;if(i.origin!==new URL(l).origin)return null;return i.origin+i.pathname}catch{return null}};const m=new Map;const w=(o)=>{let r=m.get(o);if(!r){if(m.size>=h){const l=m.keys().next().value;if(l!==undefined)m.delete(l)}r={fails:[],until:0,cooldown:f,hard:false};m.set(o,r)}return r};const R=(o)=>{const r=m.get(o);return r!==undefined&&r.until>Date.now()};const O=(o,r)=>{const l=Date.now();const i=w(o);if(r)i.hard=true;if(i.until>l)return;i.fails.push(l);while(i.fails.length>0&&i.fails[0]<=l-d)i.fails.shift();if(i.fails.length>=p){i.until=l+i.cooldown;if(i.hard)i.cooldown=Math.min(i.cooldown*2,g);i.fails.length=0;try{n(()=>{try{S(true)}catch{}},i.until-l+100)}catch{}console.warn("[omelette] asset circuit breaker: pausing requests to "+o+" for "+Math.round((i.until-l)/1000)+"s after "+p+" failures in "+d/1000+"s")}};const e=(o)=>{m.delete(o)};const t=100;const a=new WeakMap;const u=new Set;let s=null;const S=(o)=>{for(const r of Array.from(u)){try{const l=a.get(r);if(l===undefined){u.delete(r);continue}if(o){const i=y(l);if(i!==null&&R(i))continue}a.delete(r);u.delete(r);if(s!==null)s.call(r,l)}catch{}}};C=()=>{try{m.clear();S(false)}catch{}};document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")C()});const _=window.fetch;if(typeof _==="function"){const o=function(...r){let l=null;try{l=y(r[0])}catch{}if(l!==null&&R(l)){let c;try{if(r[1]&&r[1].signal!==undefined){c=r[1].signal||undefined}else if(typeof Request!=="undefined"&&r[0]instanceof Request){c=r[0].signal||undefined}}catch{c=undefined}return new Promise((k,b)=>{const E=()=>{try{return c.reason!==undefined?c.reason:new DOMException("The operation was aborted.","AbortError")}catch{return new DOMException("The operation was aborted.","AbortError")}};try{if(c&&c.aborted){b(E());return}}catch{}let T=false;const j=()=>{if(T)return;T=true;b(E())};try{if(c)c.addEventListener("abort",j,{once:true})}catch{}n(()=>{if(T)return;T=true;try{if(c)c.removeEventListener("abort",j)}catch{}let L;try{L=new Response(null,{status:429,statusText:"Too Many Requests",headers:{"Retry-After":"10"}})}catch{L={ok:false,status:429}}k(L)},250)})}const i=_.apply(window,r);if(l!==null){const c=l;i.then((k)=>{try{if(k.ok)e(c);else if(k.status===401||k.status===403||k.status===404||k.status===429){O(c,k.status!==404)}}catch{}},()=>{})}return i};window.fetch=o}const v=Object.getOwnPropertyDescriptor(HTMLImageElement.prototype,"src");if(v!==undefined&&v.set!==undefined&&v.get!==undefined){const o=v.set;s=o;Object.defineProperty(HTMLImageElement.prototype,"src",{configurable:true,enumerable:v.enumerable,get:v.get,set(r){const l=`${r}`;try{const i=y(l);if(i!==null&&R(i)){a.set(this,l);if(u.size<t)u.add(this);return}}catch{}try{a.delete(this);u.delete(this)}catch{}o.call(this,l)}})}try{const o=HTMLImageElement.prototype.setAttribute;HTMLImageElement.prototype.setAttribute=function(r,l){if(arguments.length<2){o.apply(this,arguments);return}if(typeof r==="string"&&r.toLowerCase()==="src"){const i=`${l}`;try{const c=y(i);if(c!==null&&R(c)){a.set(this,i);if(u.size<t)u.add(this);return}a.delete(this);u.delete(this)}catch{}o.call(this,r,i);return}o.call(this,r,l)}}catch{}window.addEventListener("error",(o)=>{try{const r=o.target;if(r instanceof HTMLImageElement){const l=y(r.currentSrc||r.src||"");if(l!==null)O(l,true)}}catch{}},true);window.addEventListener("load",(o)=>{try{const r=o.target;if(r instanceof HTMLImageElement){const l=y(r.currentSrc||r.src||"");if(l!==null)e(l);const i=a.get(r);if(i!==undefined){let c=false;try{c=new URL(i,document.baseURI).href===new URL(r.currentSrc||r.src||"",document.baseURI).href}catch{c=false}if(c){a.delete(r);u.delete(r)}}}}catch{}},true)}catch{}}var J=30000;var G=3000;document.addEventListener("DOMContentLoaded",()=>{const n=window.Babel;const d="om-src-id";if(n&&n.registerPlugin&&!(n.availablePlugins&&n.availablePlugins[d])){n.registerPlugin(d,({types:h})=>({visitor:{JSXOpeningElement(y,m){const w=y.node;if(w.name&&w.name.type==="JSXMemberExpression")return;for(let t=0;t<w.attributes.length;t++){const a=w.attributes[t];if(a.type==="JSXAttribute"&&a.name&&a.name.name==="data-om-id")return}const R=m.file&&m.file.opts&&m.file.opts.filename||"?";const O=w.loc&&w.loc.start;const e=`jsx:${R}:${w.start??0}:${O?O.line:0}:${O?O.column+1:0}`;w.attributes.push(h.jsxAttribute(h.jsxIdentifier("data-om-id"),h.stringLiteral(e)))}}}))}const p="om-text-extract";let f=false;if(B&&n&&n.registerPlugin&&!(n.availablePlugins&&n.availablePlugins[p])){const h=window.React;if(h&&h.useSyncExternalStore&&h.createElement){f=true;const y={};const m=new Set;let w=0;window.__omTextO=y;window.__omTextSet=(e)=>{for(const t in e){const a=e[t];if(a==null)delete y[t];else y[t]=a}w++;m.forEach((t)=>t())};const R=(e)=>{m.add(e);return()=>m.delete(e)};const O=()=>w;window.__OmT=function e(t){h.useSyncExternalStore(R,O,O);return h.createElement("span",{"data-om-text":t.i,className:"__om-t"},t.i in y?y[t.i]:t.children)};n.registerPlugin(p,({types:e})=>{const t={style:1,script:1,noscript:1,textarea:1,title:1,option:1,text:1,tspan:1,textPath:1};const a={placeholder:1,alt:1,title:1,label:1,"aria-label":1,"aria-description":1,"aria-placeholder":1};const u=(o,r)=>e.logicalExpression("??",e.memberExpression(e.logicalExpression("||",e.memberExpression(e.identifier("window"),e.identifier("__omTextO")),e.objectExpression([])),e.stringLiteral(o),true),r);const s=(o)=>o.file&&o.file.opts&&o.file.opts.filename||"?";const S=(o)=>o.file&&o.file.code||"";const _=(o,r)=>{const l=(c)=>c&&c.start!=null&&c.end!=null&&(c.type==="StringLiteral"||c.type==="TemplateLiteral"&&c.expressions.length===0)?[c.start,c.end]:null;const i=l(r);if(i)return i;if(r&&r.type==="Identifier"){const c=o.scope.getBinding(r.name);if(c&&c.constant&&c.path.node.type==="VariableDeclarator"){return l(c.path.node.init)}}return null};const v=(o,r,l)=>{const i=o.node;let c=false;const k=(E,T)=>{c=true;return e.jsxElement(e.jsxOpeningElement(e.jsxIdentifier("__OmT"),[e.jsxAttribute(e.jsxIdentifier("i"),e.stringLiteral(E))],false),e.jsxClosingElement(e.jsxIdentifier("__OmT")),[T],false)};const b=i.children.map((E)=>{if(E.type==="JSXText"){if(E.start==null||E.end==null)return E;const T=l.slice(E.start,E.end);const j=T.length-T.trimStart().length;const L=T.length-T.trimEnd().length;if(j+L>=T.length)return E;return k(`txt:${r}:${E.start+j}:${E.end-L}`,E)}if(E.type==="JSXExpressionContainer"){const T=_(o,E.expression);if(T)return k(`str:${r}:${T[0]}:${T[1]}`,E)}return E});if(c)i.children=b};return{visitor:{JSXOpeningElement(o,r){const l=o.node;const i=s(r);const c={};for(let k=0;k<l.attributes.length;k++){const b=l.attributes[k];if(b.type!=="JSXAttribute"||!b.name)continue;const E=b.name.name;if(!a[E])continue;if(!b.value||b.value.type!=="StringLiteral")continue;if(b.value.start==null||b.value.end==null)continue;const T=`txt:${i}:${b.value.start}:${b.value.end}`;c[E]=T;b.value=e.jsxExpressionContainer(u(T,e.stringLiteral(b.value.value)))}if(Object.keys(c).length){l.attributes.push(e.jsxAttribute(e.jsxIdentifier("data-om-text-attrs"),e.stringLiteral(JSON.stringify(c))))}},JSXElement(o,r){const l=o.node.openingElement;const i=l&&l.name&&l.name.name;if(i==="__OmT")return;if(typeof i==="string"&&t[i])return;v(o,s(r),S(r))},JSXFragment(o,r){v(o,s(r),S(r))}}}})}}const g=f?["transform-react-jsx-source",d,p]:["transform-react-jsx-source",d];document.querySelectorAll('script[type="text/babel"],script[type="text/jsx"]').forEach((h,y)=>{const m=h.getAttribute("data-plugins")||"";const w=g.filter((R)=>m.indexOf(R)<0);if(w.length){h.setAttribute("data-plugins",m?`${m},${w.join(",")}`:w.join(","))}if(!h.hasAttribute("data-filename")){h.setAttribute("data-filename",h.getAttribute("src")||`inline-${y}`)}})});var A=window.parent;var U="not editable here — open the project in the Claude Design editor to save";var W=()=>Promise.resolve({persisted:false,noHost:true,reason:U});var H=W;var M="data/storage.json";var z=()=>{try{const n=new URL(document.baseURI);const d=n.pathname.match(/\/projects\/([^/]+)\/serve\//);if(d)return d[1];return n.hostname.split(".")[0]||""}catch{return location.hostname.split(".")[0]||""}};var Z=()=>{try{const n=new URL(document.baseURI);const d=n.pathname.indexOf("/serve/");if(d>=0)return n.origin+n.pathname.slice(0,d+"/serve/".length)+M}catch{}return"./"+M};var x=null;var N=()=>{if(!x){x=fetch(Z(),{cache:"no-store"}).then((n)=>{if(n.ok)return n.text();return n.status===404?"":null}).catch(()=>null).then((n)=>{if(n===null){x=null;return null}const d=new Map;if(!n)return d;let p;try{p=JSON.parse(n)}catch{console.warn("[omelette.storage] "+M+" is not valid JSON; treating the store as unreadable so a save cannot overwrite the "+"hand-edited bytes. Fix the JSON (or delete the file) to re-enable persistence.");x=null;return null}if(p===null||typeof p!=="object"||Array.isArray(p)){console.warn("[omelette.storage] "+M+" doesn't hold a JSON object; treating the store as unreadable so a save cannot "+"overwrite the hand-edited bytes. Make the top level a JSON object to re-enable persistence.");x=null;return null}const f=p;if("data"in f){const g=f.data;if(g===null||typeof g!=="object"||Array.isArray(g)){console.warn("[omelette.storage] "+M+' has a "data" field that is not a JSON object; treating the store as unreadable so a '+'save cannot overwrite the hand-edited bytes. Make "data" a JSON object to re-enable persistence.');x=null;return null}const h=f._meta;const y=h!==null&&typeof h==="object"?h.project:undefined;if(typeof y==="string"&&y!==""&&y!==z())return d;for(const m of Object.keys(g))d.set(m,g[m]);return d}for(const g of Object.keys(f)){if(g!=="_meta")d.set(g,f[g])}return d})}return x};var F=(n)=>H(M,JSON.stringify({_meta:{project:z(),version:1},data:Object.fromEntries(n)},null,2));var D=Promise.resolve();var $=(n)=>{const d=D.then(n);D=d.then(()=>{return},()=>{return});return d};var V=/sk-(?:ant-)?[A-Za-z0-9_-]{16,}|AKIA[0-9A-Z]{16}|gh[pousr]_[A-Za-z0-9]{20,}|xox[a-z]-[A-Za-z0-9][A-Za-z0-9-]{9,}|AIza[0-9A-Za-z_-]{30,}|-----BEGIN [A-Z ]*PRIVATE KEY-----/;var Y=/password|passwd|secret|api[_-]?key|access[_-]?token|auth[_-]?token|credential/i;var Q=(n,d,p)=>{if(V.test(d)||Y.test(n)&&typeof p==="string"&&p.length>=8){console.warn('[omelette.storage] the value for "'+n+'" looks like a credential. The storage file is a plaintext project file — visible to '+"everyone with project access and copied when the project is duplicated. Do not store secrets here.")}};var q={persisted:false,reason:"could not load the existing store — not overwriting it"};var X={persisted:false,reason:"stored value changed since a failed read — re-read this key before saving"};var P=new Set;var ee={get:(n)=>{if(typeof n!=="string"){return Promise.reject(new TypeError("storage.get: key must be a string"))}return $(N).then((d)=>{if(d===null){P.add(n);return null}P.delete(n);if(!d.has(n))return null;const p=d.get(n);return p==null?null:JSON.parse(JSON.stringify(p))})},set:(n,d)=>{if(typeof n!=="string"){return Promise.reject(new TypeError("storage.set: key must be a string"))}let p;try{p=JSON.stringify(d)}catch(g){return Promise.reject(new TypeError("storage.set: value must be JSON-serializable ("+String(g)+")"))}if(p===undefined){return Promise.reject(new TypeError("storage.set: value must be JSON-serializable"))}Q(n,p,d);const f=JSON.parse(p);return $(()=>N().then((g)=>{if(g===null)return q;if(P.has(n)){if(g.has(n))return X;P.delete(n)}g.set(n,f);return F(g)}))},delete:(n)=>{if(typeof n!=="string"){return Promise.reject(new TypeError("storage.delete: key must be a string"))}return $(()=>N().then((d)=>{if(d===null)return q;if(P.has(n)){if(d.has(n))return X;P.delete(n)}d.delete(n);return F(d)}))},keys:()=>$(N).then((n)=>n===null?[]:Array.from(n.keys()))};window.omelette={writeFile:(n,d)=>H(n,d).then((p)=>{if(!p.persisted&&!p.noHost){throw new Error(p.reason||"write failed")}}),storage:ee};if(A&&A!==window){const n=(e,t)=>{try{A.postMessage({__omelette_log:true,type:e,data:t},"*")}catch{}};["log","warn","error"].forEach((e)=>{const t=console[e];console[e]=(...a)=>{const u=a.map((s)=>{try{return typeof s==="object"?JSON.stringify(s):String(s)}catch{try{return String(s)}catch{return"[unstringifiable]"}}}).join(" ");n(e,u);t.apply(console,a)}});window.addEventListener("error",(e)=>{const t=e.target;if(t&&t!==window&&t.tagName){const a=t.src||t.href||"";n("resource_error",`${t.tagName} failed to load: ${a}`)}else{n("error",`${e.message||"Unknown error"} at ${e.filename||"?"}:${e.lineno||0}:${e.colno||0}`)}},true);window.addEventListener("unhandledrejection",(e)=>{const t=e.reason;const a=t instanceof Error?`${t.message} ${t.stack}`:String(t);n("error",`Unhandled rejection: ${a}`)});window.addEventListener("click",(e)=>{if(e.defaultPrevented||e.button!==0)return;if(e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;const t=e.composedPath?e.composedPath():[];const a=["button","input","select","textarea","summary","label"];let u=null;for(const v of t){if(!(v instanceof Element))continue;if(v.localName==="a"){if(!(v instanceof HTMLAnchorElement))return;u=v;break}if(a.indexOf(v.localName)!==-1)return}if(!u)return;if(u.isContentEditable)return;const s=u.closest("[contenteditable]");if(s&&s.getAttribute("contenteditable")!=="false")return;const S=(u.getAttribute("target")||"_self").toLowerCase();if(S!=="_self"&&S!=="_top"&&S!=="_parent")return;let _;try{_=new URL(u.href)}catch{return}if(_.protocol!=="http:"&&_.protocol!=="https:")return;if(location.origin==="null")return;if(_.origin===location.origin)return;e.preventDefault();window.open(_.href,"_blank","noopener,noreferrer")});const d=()=>{try{A.postMessage({type:"omelette:height",height:document.documentElement.scrollHeight},"*")}catch{}};if(window.ResizeObserver)new ResizeObserver(d).observe(document.documentElement);const p=()=>{d();if(!document.querySelector('script[type="text/babel"],script[type="text/jsx"]'))return;const e=()=>document.getElementById("root")||document.querySelector("body > div[id]");const t=e()?.firstElementChild??null;let a=0;const u=()=>{const s=e();if(s&&s.firstElementChild!==t||++a>30){d();return}setTimeout(u,100)};setTimeout(u,100)};if(document.readyState==="complete")p();else window.addEventListener("load",p);const f={};let g=0;const h=(e)=>new Promise((t,a)=>{if(!I.length){a(new Error("claude.complete: no parent origin"));return}const u=`c${++g}`;const s=()=>setTimeout(()=>{delete f[u];a(new Error(`claude.complete: no data for ${J/1000}s`))},J);const S=s();f[u]={resolve:t,reject:a,text:"",t:S,arm:s};try{for(const _ of I){A.postMessage({__om_api:true,id:u,body:e},_)}}catch(_){clearTimeout(S);delete f[u];a(_)}});const y=8;const m=async(e,t)=>{if(!Array.isArray(e.messages)){throw new Error("claude.complete: tools require a messages array")}const a=e.messages.slice();const u={...e,tools:e.tools.map((_)=>{if(_===null||typeof _!=="object")return _;const v={};for(const o of Object.keys(_)){if(typeof _[o]!=="function")v[o]=_[o]}return v})};const s=u.tool_choice;const S=s!=null&&(s.type==="any"||s.type==="tool")?{...u,tool_choice:s.disable_parallel_tool_use!==undefined?{type:"auto",disable_parallel_tool_use:s.disable_parallel_tool_use}:{type:"auto"}}:u;for(let _=0;_<y;_++){const v=await h({..._===0?u:S,messages:a});const o=v.message;const r=o&&Array.isArray(o.content)?o.content:null;const l=r?r.filter((c)=>c?.type==="tool_use"):[];if(o?.stop_reason!=="tool_use"||l.length===0){return v.text}const i=[];for(const c of l){const k=t.get(c.name);if(!k){i.push({type:"tool_result",tool_use_id:c.id,content:`no handler for tool "${c.name}"`,is_error:true});continue}try{const b=await k(c.input);const E=typeof b==="string"?b:O(b)??"";i.push({type:"tool_result",tool_use_id:c.id,content:E})}catch(b){i.push({type:"tool_result",tool_use_id:c.id,content:String(b?.message??b??"tool handler failed"),is_error:true})}}a.push({role:"assistant",content:r},{role:"user",content:i})}throw new Error(`claude.complete: exceeded ${y} tool turns`)};window.claude={complete(e){const t=e;if(t!==null&&typeof t==="object"&&Array.isArray(t.tools)&&t.tools.some((a)=>a!==null&&typeof a==="object"&&typeof a.run==="function")){const a=new Map;for(const u of t.tools){if(u!==null&&typeof u==="object"&&typeof u.run==="function"){a.set(String(u.name),u.run)}}return m(t,a)}return h(e).then((a)=>a.text)}};const w={};let R=0;H=(e,t)=>new Promise((a)=>{if(!I.length){a({persisted:false,noHost:true,reason:U});return}const u=`f${++R}`;const s=setTimeout(()=>{delete w[u];a({persisted:false,noHost:true,reason:U})},G);w[u]={settle:a,t:s};try{for(const S of I){A.postMessage({__om_file:true,id:u,op:"write",path:e,content:t},S)}}catch{clearTimeout(s);delete w[u];a({persisted:false,noHost:true,reason:U})}});const O=(e)=>{try{return JSON.stringify(e)}catch{return JSON.stringify(String(e))}};window.addEventListener("message",(e)=>{if(I.indexOf(e.origin)<0)return;if(e.source!==A)return;const t=e.data;if(!t)return;if(t.type==="omelette-preview-refresh"){if(typeof t.token!=="string"||!/^[0-9a-f.-]+(\.(rc|pr-[0-9]+))?(\.[0-9]+\.[0-9a-f]{16})?$/.test(t.token))return;const s=Math.max(1,Math.floor((t.expiresAt||0)-Date.now()/1000));document.cookie="__Host-omelette-preview="+t.token+"; Path=/; Secure; SameSite=None; Partitioned; Max-Age="+s;C();return}if(t.__om_file_r){const s=w[t.id];if(!s)return;clearTimeout(s.t);delete w[t.id];s.settle(t.ok?{persisted:true}:{persisted:false,reason:t.error||"write failed"});return}if(t.__om_api_r){const s=f[t.id];if(!s)return;if(t.error!=null){clearTimeout(s.t);delete f[t.id];s.reject(new Error(t.error));return}if(t.chunk!=null){clearTimeout(s.t);s.t=s.arm();s.text+=t.chunk;return}if(t.done){clearTimeout(s.t);delete f[t.id];s.resolve({text:t.text!=null?t.text:s.text,message:t.message});return}return}if(!t.__om_eval)return;const a=t;const u=(s)=>{e.source.postMessage({...s,__om_eval_r:1,id:a.id},e.origin)};try{const s=(0,eval)(a.code);if(s&&typeof s.then==="function"){s.then((S)=>u({ok:1,v:O(S)}),(S)=>u({ok:0,e:String(S)}))}else{u({ok:1,v:O(s)})}}catch(s){u({ok:0,e:String(s)})}})}})();
+</script>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js.download"></script><style>x-dc{display:none!important}</style><script src="./react.production.min.js.download" integrity="sha384-DGyLxAyjq0f9SPpVevD6IgztCFlnMF6oW/XQGmfe+IsZ8TqEiDrcHkMLKI6fiB/Z" crossorigin="anonymous"></script><script src="./react-dom.production.min.js.download" integrity="sha384-gTGxhz21lVGYNMcdJOyq01Edg0jhn/c22nsx0kyqP0TxaV5WVdsSH1fSDUf5YJj1" crossorigin="anonymous"></script>
+<style id="__dc-atomics">.fx{display:flex}.col{display:flex;flex-direction:column}.grid{display:grid}.ac{align-items:center}.jc{justify-content:center}.jb{justify-content:space-between}.f1{flex:1}.noshrink{flex-shrink:0}.wrap{flex-wrap:wrap}.fw5{font-weight:500}.fw6{font-weight:600}.fw7{font-weight:700}.fw8{font-weight:800}.fs11{font-size:11px}.fs12{font-size:12px}.fs13{font-size:13px}.fs14{font-size:14px}.fs15{font-size:15px}.fs16{font-size:16px}.fs20{font-size:20px}.fs22{font-size:22px}.upper{text-transform:uppercase}.tc{text-align:center}.nowrap{white-space:nowrap}.gap8{gap:8px}.gap10{gap:10px}.gap12{gap:12px}.gap16{gap:16px}.gap24{gap:24px}.m0{margin:0}.mt8{margin-top:8px}.mt12{margin-top:12px}.mt16{margin-top:16px}.mb8{margin-bottom:8px}.mb12{margin-bottom:12px}.mb16{margin-bottom:16px}.posrel{position:relative}.posabs{position:absolute}.round{border-radius:50%}.ohide{overflow:hidden}.bbox{box-sizing:border-box}.pointer{cursor:pointer}.w100{width:100%}.b0{border:none}</style><style></style><script src="./babel.min.js.download" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script><link rel="preconnect" href="https://fonts.googleapis.com/" data-dc-tpl="1"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" data-dc-tpl="2"><link href="./css2" rel="stylesheet" data-dc-tpl="3"><style data-dc-tpl="4">
+  body{margin:0;background:#EDEFF2;font-family:'DM Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:#0B6FA4;text-decoration:none}
+  a:hover{color:#00A8F0}
+  ::-webkit-scrollbar{width:0;height:0}
+  @keyframes mthPulse{0%,100%{opacity:.35;transform:scale(1)}50%{opacity:.9;transform:scale(1.06)}}
+  @keyframes mthRise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+</style><style data-designer-overlay="1"></style><meta name="x-build-id" content="3c02abbd7d8261dd4219eadadbcd87aa436b01a0"></head>
+<body>
+<div id="dc-root"><div class="sc-host" data-sc-name="Modern Talent Hub App"><div data-dc-tpl="5" style="min-height: 100vh; padding: 28px 24px 64px; box-sizing: border-box;">
+  <div data-dc-tpl="6" style="max-width: 1220px; margin: 0px auto; display: flex; flex-wrap: wrap; gap: 36px; align-items: flex-start;">
+
+    <div data-dc-tpl="7" style="flex: 1 1 250px; min-width: 230px; max-width: 300px; position: sticky; top: 24px;">
+      <div data-dc-tpl="8" style="display: flex; align-items: center; gap: 12px; margin-bottom: 6px;">
+        <img data-dc-tpl="9" src="./mth-mark.png" alt="Modern Talent Hub" style="width: 52px; height: auto; display: block;">
+        <div data-dc-tpl="10">
+          <div data-dc-tpl="11" style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 15px; letter-spacing: 0.02em; color: rgb(15, 26, 36); line-height: 1.15;">MODERN TALENT HUB</div>
+          <div data-dc-tpl="12" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 10.5px; letter-spacing: 0.14em; color: rgb(91, 107, 120); margin-top: 3px;">MOBILE APP · v1 PROTOTYPE</div>
+        </div>
+      </div>
+      <p data-dc-tpl="13" style="font-size: 13px; line-height: 1.55; color: rgb(91, 107, 120); margin: 14px 0px 22px; text-wrap: pretty;">Clickable flow. Tap through the phone, or jump straight to any screen below. Teachers set their own price and billing cycle; MTH splits every payment <strong data-dc-tpl="14" style="color: rgb(15, 26, 36);">70% teacher / 30% platform</strong> behind the scenes.</p>
+
+      
+        <div data-dc-tpl="16" style="margin-bottom: 18px;">
+          <div data-dc-tpl="17" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 10px; letter-spacing: 0.16em; color: rgb(138, 154, 166); margin: 0px 0px 8px 2px;"><span class="sc-interp">AUTH</span></div>
+          <div data-dc-tpl="18" style="display: flex; flex-direction: column; gap: 3px;">
+            
+              <div data-dc-tpl="20" class="scp0" style="display: flex; align-items: center; gap: 9px; padding: 9px 11px; border-radius: 9px; cursor: pointer; font-size: 12.5px; line-height: 1.2; background: rgb(15, 26, 36); color: rgb(255, 255, 255); font-weight: 500;">
+                <span data-dc-tpl="21" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 9.5px; opacity: 0.5; width: 16px;"><span class="sc-interp">01</span></span>
+                <span data-dc-tpl="22"><span class="sc-interp">Splash &amp; role choice</span></span>
+              </div>
+            
+              <div data-dc-tpl="20" class="scp0" style="display: flex; align-items: center; gap: 9px; padding: 9px 11px; border-radius: 9px; cursor: pointer; font-size: 12.5px; line-height: 1.2; background: rgb(255, 255, 255); color: rgb(58, 74, 86); border: 1px solid rgba(15, 26, 36, 0.07);">
+                <span data-dc-tpl="21" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 9.5px; opacity: 0.5; width: 16px;"><span class="sc-interp">02</span></span>
+                <span data-dc-tpl="22"><span class="sc-interp">Login</span></span>
+              </div>
+            
+          </div>
+        </div>
+      
+        <div data-dc-tpl="16" style="margin-bottom: 18px;">
+          <div data-dc-tpl="17" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 10px; letter-spacing: 0.16em; color: rgb(138, 154, 166); margin: 0px 0px 8px 2px;"><span class="sc-interp">STUDENT</span></div>
+          <div data-dc-tpl="18" style="display: flex; flex-direction: column; gap: 3px;">
+            
+              <div data-dc-tpl="20" class="scp0" style="display: flex; align-items: center; gap: 9px; padding: 9px 11px; border-radius: 9px; cursor: pointer; font-size: 12.5px; line-height: 1.2; background: rgb(255, 255, 255); color: rgb(58, 74, 86); border: 1px solid rgba(15, 26, 36, 0.07);">
+                <span data-dc-tpl="21" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 9.5px; opacity: 0.5; width: 16px;"><span class="sc-interp">03</span></span>
+                <span data-dc-tpl="22"><span class="sc-interp">Home dashboard</span></span>
+              </div>
+            
+              <div data-dc-tpl="20" class="scp0" style="display: flex; align-items: center; gap: 9px; padding: 9px 11px; border-radius: 9px; cursor: pointer; font-size: 12.5px; line-height: 1.2; background: rgb(255, 255, 255); color: rgb(58, 74, 86); border: 1px solid rgba(15, 26, 36, 0.07);">
+                <span data-dc-tpl="21" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 9.5px; opacity: 0.5; width: 16px;"><span class="sc-interp">04</span></span>
+                <span data-dc-tpl="22"><span class="sc-interp">Marketplace · find a teacher</span></span>
+              </div>
+            
+              <div data-dc-tpl="20" class="scp0" style="display: flex; align-items: center; gap: 9px; padding: 9px 11px; border-radius: 9px; cursor: pointer; font-size: 12.5px; line-height: 1.2; background: rgb(255, 255, 255); color: rgb(58, 74, 86); border: 1px solid rgba(15, 26, 36, 0.07);">
+                <span data-dc-tpl="21" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 9.5px; opacity: 0.5; width: 16px;"><span class="sc-interp">05</span></span>
+                <span data-dc-tpl="22"><span class="sc-interp">Course: Mathematics</span></span>
+              </div>
+            
+              <div data-dc-tpl="20" class="scp0" style="display: flex; align-items: center; gap: 9px; padding: 9px 11px; border-radius: 9px; cursor: pointer; font-size: 12.5px; line-height: 1.2; background: rgb(255, 255, 255); color: rgb(58, 74, 86); border: 1px solid rgba(15, 26, 36, 0.07);">
+                <span data-dc-tpl="21" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 9.5px; opacity: 0.5; width: 16px;"><span class="sc-interp">06</span></span>
+                <span data-dc-tpl="22"><span class="sc-interp">Lesson + downloads</span></span>
+              </div>
+            
+              <div data-dc-tpl="20" class="scp0" style="display: flex; align-items: center; gap: 9px; padding: 9px 11px; border-radius: 9px; cursor: pointer; font-size: 12.5px; line-height: 1.2; background: rgb(255, 255, 255); color: rgb(58, 74, 86); border: 1px solid rgba(15, 26, 36, 0.07);">
+                <span data-dc-tpl="21" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 9.5px; opacity: 0.5; width: 16px;"><span class="sc-interp">07</span></span>
+                <span data-dc-tpl="22"><span class="sc-interp">Quiz</span></span>
+              </div>
+            
+              <div data-dc-tpl="20" class="scp0" style="display: flex; align-items: center; gap: 9px; padding: 9px 11px; border-radius: 9px; cursor: pointer; font-size: 12.5px; line-height: 1.2; background: rgb(255, 255, 255); color: rgb(58, 74, 86); border: 1px solid rgba(15, 26, 36, 0.07);">
+                <span data-dc-tpl="21" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 9.5px; opacity: 0.5; width: 16px;"><span class="sc-interp">08</span></span>
+                <span data-dc-tpl="22"><span class="sc-interp">Quiz result</span></span>
+              </div>
+            
+              <div data-dc-tpl="20" class="scp0" style="display: flex; align-items: center; gap: 9px; padding: 9px 11px; border-radius: 9px; cursor: pointer; font-size: 12.5px; line-height: 1.2; background: rgb(255, 255, 255); color: rgb(58, 74, 86); border: 1px solid rgba(15, 26, 36, 0.07);">
+                <span data-dc-tpl="21" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 9.5px; opacity: 0.5; width: 16px;"><span class="sc-interp">09</span></span>
+                <span data-dc-tpl="22"><span class="sc-interp">Assignment upload</span></span>
+              </div>
+            
+              <div data-dc-tpl="20" class="scp0" style="display: flex; align-items: center; gap: 9px; padding: 9px 11px; border-radius: 9px; cursor: pointer; font-size: 12.5px; line-height: 1.2; background: rgb(255, 255, 255); color: rgb(58, 74, 86); border: 1px solid rgba(15, 26, 36, 0.07);">
+                <span data-dc-tpl="21" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 9.5px; opacity: 0.5; width: 16px;"><span class="sc-interp">10</span></span>
+                <span data-dc-tpl="22"><span class="sc-interp">View Price · M-PESA Till</span></span>
+              </div>
+            
+              <div data-dc-tpl="20" class="scp0" style="display: flex; align-items: center; gap: 9px; padding: 9px 11px; border-radius: 9px; cursor: pointer; font-size: 12.5px; line-height: 1.2; background: rgb(255, 255, 255); color: rgb(58, 74, 86); border: 1px solid rgba(15, 26, 36, 0.07);">
+                <span data-dc-tpl="21" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 9.5px; opacity: 0.5; width: 16px;"><span class="sc-interp">11</span></span>
+                <span data-dc-tpl="22"><span class="sc-interp">Checkout · M-PESA STK push</span></span>
+              </div>
+            
+              <div data-dc-tpl="20" class="scp0" style="display: flex; align-items: center; gap: 9px; padding: 9px 11px; border-radius: 9px; cursor: pointer; font-size: 12.5px; line-height: 1.2; background: rgb(255, 255, 255); color: rgb(58, 74, 86); border: 1px solid rgba(15, 26, 36, 0.07);">
+                <span data-dc-tpl="21" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 9.5px; opacity: 0.5; width: 16px;"><span class="sc-interp">12</span></span>
+                <span data-dc-tpl="22"><span class="sc-interp">Progress &amp; certificate</span></span>
+              </div>
+            
+          </div>
+        </div>
+      
+        <div data-dc-tpl="16" style="margin-bottom: 18px;">
+          <div data-dc-tpl="17" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 10px; letter-spacing: 0.16em; color: rgb(138, 154, 166); margin: 0px 0px 8px 2px;"><span class="sc-interp">TEACHER</span></div>
+          <div data-dc-tpl="18" style="display: flex; flex-direction: column; gap: 3px;">
+            
+              <div data-dc-tpl="20" class="scp0" style="display: flex; align-items: center; gap: 9px; padding: 9px 11px; border-radius: 9px; cursor: pointer; font-size: 12.5px; line-height: 1.2; background: rgb(255, 255, 255); color: rgb(58, 74, 86); border: 1px solid rgba(15, 26, 36, 0.07);">
+                <span data-dc-tpl="21" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 9.5px; opacity: 0.5; width: 16px;"><span class="sc-interp">12</span></span>
+                <span data-dc-tpl="22"><span class="sc-interp">Dashboard &amp; wallet</span></span>
+              </div>
+            
+              <div data-dc-tpl="20" class="scp0" style="display: flex; align-items: center; gap: 9px; padding: 9px 11px; border-radius: 9px; cursor: pointer; font-size: 12.5px; line-height: 1.2; background: rgb(255, 255, 255); color: rgb(58, 74, 86); border: 1px solid rgba(15, 26, 36, 0.07);">
+                <span data-dc-tpl="21" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 9.5px; opacity: 0.5; width: 16px;"><span class="sc-interp">13</span></span>
+                <span data-dc-tpl="22"><span class="sc-interp">My Courses</span></span>
+              </div>
+            
+              <div data-dc-tpl="20" class="scp0" style="display: flex; align-items: center; gap: 9px; padding: 9px 11px; border-radius: 9px; cursor: pointer; font-size: 12.5px; line-height: 1.2; background: rgb(255, 255, 255); color: rgb(58, 74, 86); border: 1px solid rgba(15, 26, 36, 0.07);">
+                <span data-dc-tpl="21" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 9.5px; opacity: 0.5; width: 16px;"><span class="sc-interp">14</span></span>
+                <span data-dc-tpl="22"><span class="sc-interp">Create / edit course</span></span>
+              </div>
+            
+              <div data-dc-tpl="20" class="scp0" style="display: flex; align-items: center; gap: 9px; padding: 9px 11px; border-radius: 9px; cursor: pointer; font-size: 12.5px; line-height: 1.2; background: rgb(255, 255, 255); color: rgb(58, 74, 86); border: 1px solid rgba(15, 26, 36, 0.07);">
+                <span data-dc-tpl="21" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 9.5px; opacity: 0.5; width: 16px;"><span class="sc-interp">15</span></span>
+                <span data-dc-tpl="22"><span class="sc-interp">Manage content · modules</span></span>
+              </div>
+            
+              <div data-dc-tpl="20" class="scp0" style="display: flex; align-items: center; gap: 9px; padding: 9px 11px; border-radius: 9px; cursor: pointer; font-size: 12.5px; line-height: 1.2; background: rgb(255, 255, 255); color: rgb(58, 74, 86); border: 1px solid rgba(15, 26, 36, 0.07);">
+                <span data-dc-tpl="21" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 9.5px; opacity: 0.5; width: 16px;"><span class="sc-interp">16</span></span>
+                <span data-dc-tpl="22"><span class="sc-interp">Lesson &amp; uploads</span></span>
+              </div>
+            
+              <div data-dc-tpl="20" class="scp0" style="display: flex; align-items: center; gap: 9px; padding: 9px 11px; border-radius: 9px; cursor: pointer; font-size: 12.5px; line-height: 1.2; background: rgb(255, 255, 255); color: rgb(58, 74, 86); border: 1px solid rgba(15, 26, 36, 0.07);">
+                <span data-dc-tpl="21" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 9.5px; opacity: 0.5; width: 16px;"><span class="sc-interp">17</span></span>
+                <span data-dc-tpl="22"><span class="sc-interp">Teacher menu (10 sections)</span></span>
+              </div>
+            
+              <div data-dc-tpl="20" class="scp0" style="display: flex; align-items: center; gap: 9px; padding: 9px 11px; border-radius: 9px; cursor: pointer; font-size: 12.5px; line-height: 1.2; background: rgb(255, 255, 255); color: rgb(58, 74, 86); border: 1px solid rgba(15, 26, 36, 0.07);">
+                <span data-dc-tpl="21" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 9.5px; opacity: 0.5; width: 16px;"><span class="sc-interp">18</span></span>
+                <span data-dc-tpl="22"><span class="sc-interp">Wallet &amp; transactions</span></span>
+              </div>
+            
+              <div data-dc-tpl="20" class="scp0" style="display: flex; align-items: center; gap: 9px; padding: 9px 11px; border-radius: 9px; cursor: pointer; font-size: 12.5px; line-height: 1.2; background: rgb(255, 255, 255); color: rgb(58, 74, 86); border: 1px solid rgba(15, 26, 36, 0.07);">
+                <span data-dc-tpl="21" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 9.5px; opacity: 0.5; width: 16px;"><span class="sc-interp">19</span></span>
+                <span data-dc-tpl="22"><span class="sc-interp">Withdraw to M-PESA</span></span>
+              </div>
+            
+              <div data-dc-tpl="20" class="scp0" style="display: flex; align-items: center; gap: 9px; padding: 9px 11px; border-radius: 9px; cursor: pointer; font-size: 12.5px; line-height: 1.2; background: rgb(255, 255, 255); color: rgb(58, 74, 86); border: 1px solid rgba(15, 26, 36, 0.07);">
+                <span data-dc-tpl="21" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 9.5px; opacity: 0.5; width: 16px;"><span class="sc-interp">20</span></span>
+                <span data-dc-tpl="22"><span class="sc-interp">My students</span></span>
+              </div>
+            
+          </div>
+        </div>
+      
+        <div data-dc-tpl="16" style="margin-bottom: 18px;">
+          <div data-dc-tpl="17" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 10px; letter-spacing: 0.16em; color: rgb(138, 154, 166); margin: 0px 0px 8px 2px;"><span class="sc-interp">ADMIN</span></div>
+          <div data-dc-tpl="18" style="display: flex; flex-direction: column; gap: 3px;">
+            
+              <div data-dc-tpl="20" class="scp0" style="display: flex; align-items: center; gap: 9px; padding: 9px 11px; border-radius: 9px; cursor: pointer; font-size: 12.5px; line-height: 1.2; background: rgb(255, 255, 255); color: rgb(58, 74, 86); border: 1px solid rgba(15, 26, 36, 0.07);">
+                <span data-dc-tpl="21" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 9.5px; opacity: 0.5; width: 16px;"><span class="sc-interp">21</span></span>
+                <span data-dc-tpl="22"><span class="sc-interp">Platform overview</span></span>
+              </div>
+            
+              <div data-dc-tpl="20" class="scp0" style="display: flex; align-items: center; gap: 9px; padding: 9px 11px; border-radius: 9px; cursor: pointer; font-size: 12.5px; line-height: 1.2; background: rgb(255, 255, 255); color: rgb(58, 74, 86); border: 1px solid rgba(15, 26, 36, 0.07);">
+                <span data-dc-tpl="21" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 9.5px; opacity: 0.5; width: 16px;"><span class="sc-interp">22</span></span>
+                <span data-dc-tpl="22"><span class="sc-interp">Users</span></span>
+              </div>
+            
+              <div data-dc-tpl="20" class="scp0" style="display: flex; align-items: center; gap: 9px; padding: 9px 11px; border-radius: 9px; cursor: pointer; font-size: 12.5px; line-height: 1.2; background: rgb(255, 255, 255); color: rgb(58, 74, 86); border: 1px solid rgba(15, 26, 36, 0.07);">
+                <span data-dc-tpl="21" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 9.5px; opacity: 0.5; width: 16px;"><span class="sc-interp">23</span></span>
+                <span data-dc-tpl="22"><span class="sc-interp">Transactions &amp; payouts</span></span>
+              </div>
+            
+              <div data-dc-tpl="20" class="scp0" style="display: flex; align-items: center; gap: 9px; padding: 9px 11px; border-radius: 9px; cursor: pointer; font-size: 12.5px; line-height: 1.2; background: rgb(255, 255, 255); color: rgb(58, 74, 86); border: 1px solid rgba(15, 26, 36, 0.07);">
+                <span data-dc-tpl="21" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 9.5px; opacity: 0.5; width: 16px;"><span class="sc-interp">24</span></span>
+                <span data-dc-tpl="22"><span class="sc-interp">Categories (dynamic)</span></span>
+              </div>
+            
+          </div>
+        </div>
+      
+
+      <div data-dc-tpl="23" style="margin-top: 26px; padding: 14px 16px; border-radius: 12px; background: rgb(255, 255, 255); border: 1px solid rgba(15, 26, 36, 0.08);">
+        <div data-dc-tpl="24" style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 12px; color: rgb(15, 26, 36); margin-bottom: 8px;">Responsive intent</div>
+        <div data-dc-tpl="25" style="font-size: 12px; line-height: 1.5; color: rgb(91, 107, 120);">Phone-first at 402pt. Tablet keeps the same cards on a 2-column grid; desktop promotes the bottom tab bar to a left sidebar and adds a persistent wallet header.</div>
+      </div>
+    </div>
+
+    <div data-dc-tpl="26" style="flex: 0 0 auto; margin: 0px auto;">
+      <div class="sc-host-x" data-dc-tpl="27" style="display: contents;"><div data-om-starter="ios-frame" style="width: 402px; height: 874px; border-radius: 48px; overflow: hidden; position: relative; background: rgb(242, 242, 247); box-shadow: rgba(0, 0, 0, 0.18) 0px 40px 80px, rgba(0, 0, 0, 0.12) 0px 0px 0px 1px; font-family: -apple-system, system-ui, sans-serif; -webkit-font-smoothing: antialiased;"><div style="position: absolute; top: 11px; left: 50%; transform: translateX(-50%); width: 126px; height: 37px; border-radius: 24px; background: rgb(0, 0, 0); z-index: 50;"></div><div style="position: absolute; top: 0px; left: 0px; right: 0px; z-index: 10;"><div style="display: flex; gap: 154px; align-items: center; justify-content: center; padding: 21px 24px 19px; box-sizing: border-box; position: relative; z-index: 20; width: 100%;"><div style="flex: 1 1 0%; height: 22px; display: flex; align-items: center; justify-content: center; padding-top: 1.5px;"><span style="font-family: -apple-system, &quot;SF Pro&quot;, system-ui; font-weight: 590; font-size: 17px; line-height: 22px; color: rgb(0, 0, 0);">9:41</span></div><div style="flex: 1 1 0%; height: 22px; display: flex; align-items: center; justify-content: center; gap: 7px; padding-top: 1px; padding-right: 1px;"><svg width="19" height="12" viewBox="0 0 19 12"><rect x="0" y="7.5" width="3.2" height="4.5" rx="0.7" fill="#000"></rect><rect x="4.8" y="5" width="3.2" height="7" rx="0.7" fill="#000"></rect><rect x="9.6" y="2.5" width="3.2" height="9.5" rx="0.7" fill="#000"></rect><rect x="14.4" y="0" width="3.2" height="12" rx="0.7" fill="#000"></rect></svg><svg width="17" height="12" viewBox="0 0 17 12"><path d="M8.5 3.2C10.8 3.2 12.9 4.1 14.4 5.6L15.5 4.5C13.7 2.7 11.2 1.5 8.5 1.5C5.8 1.5 3.3 2.7 1.5 4.5L2.6 5.6C4.1 4.1 6.2 3.2 8.5 3.2Z" fill="#000"></path><path d="M8.5 6.8C9.9 6.8 11.1 7.3 12 8.2L13.1 7.1C11.8 5.9 10.2 5.1 8.5 5.1C6.8 5.1 5.2 5.9 3.9 7.1L5 8.2C5.9 7.3 7.1 6.8 8.5 6.8Z" fill="#000"></path><circle cx="8.5" cy="10.5" r="1.5" fill="#000"></circle></svg><svg width="27" height="13" viewBox="0 0 27 13"><rect x="0.5" y="0.5" width="23" height="12" rx="3.5" stroke="#000" stroke-opacity="0.35" fill="none"></rect><rect x="2" y="2" width="20" height="9" rx="2" fill="#000"></rect><path d="M25 4.5V8.5C25.8 8.2 26.5 7.2 26.5 6.5C26.5 5.8 25.8 4.8 25 4.5Z" fill="#000" fill-opacity="0.4"></path></svg></div></div></div><div style="height: 100%; display: flex; flex-direction: column;"><div style="flex: 1 1 0%; overflow: auto;">
+        <div data-dc-tpl="28" style="height: 100%; display: flex; flex-direction: column; background: rgb(244, 246, 248); overflow: hidden; position: relative;">
+          <div data-dc-tpl="29" style="flex: 1 1 0%; overflow: hidden auto;">
+
+            
+            
+              <div data-dc-tpl="31" style="min-height: 874px; box-sizing: border-box; padding: 96px 26px 44px; background: radial-gradient(120% 80% at 50% 0%, rgb(11, 127, 184) 0%, rgb(7, 90, 133) 55%, rgb(4, 64, 95) 100%); display: flex; flex-direction: column;">
+                <div data-dc-tpl="32" style="position: absolute; top: 130px; left: 50%; transform: translateX(-50%); width: 250px; height: 250px; border-radius: 50%; background: rgba(0, 168, 240, 0.28); filter: blur(30px); animation: 5s ease-in-out 0s infinite normal none running mthPulse;"></div>
+                <div data-dc-tpl="33" style="position: relative; text-align: center;">
+                  <div data-dc-tpl="34" style="display: inline-flex; padding: 16px 20px; border-radius: 26px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.25) 0px 18px 40px;">
+                    <img data-dc-tpl="35" src="./mth-mark.png" alt="Modern Talent Hub" style="width: 118px; height: auto; display: block;">
+                  </div>
+                  <div data-dc-tpl="36" style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 27px; letter-spacing: 0.01em; color: rgb(255, 255, 255); margin-top: 26px; line-height: 1.1;">MODERN TALENT<br data-dc-tpl="37">HUB</div>
+                  <div data-dc-tpl="38" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 11px; letter-spacing: 0.2em; color: rgb(245, 144, 26); margin-top: 12px;">CBC · TALENT · KENYA</div>
+                  <p data-dc-tpl="39" style="font-size: 14.5px; line-height: 1.6; color: rgba(255, 255, 255, 0.82); margin: 20px 6px 0px; text-wrap: pretty;">Learn every CBC subject and grow a talent — from Grade 1 to Grade 9, wherever you are.</p>
+                </div>
+                <div data-dc-tpl="40" style="flex: 1 1 0%;"></div>
+                <div data-dc-tpl="41" style="position: relative; display: flex; flex-direction: column; gap: 12px;">
+                  <div data-dc-tpl="42" class="scp1" style="display: flex; align-items: center; gap: 14px; padding: 18px 20px; border-radius: 18px; background: rgb(255, 255, 255); cursor: pointer; box-shadow: rgba(0, 0, 0, 0.18) 0px 10px 26px;">
+                    <span data-dc-tpl="43" style="font-family: &quot;Material Symbols Rounded&quot;; font-size: 26px; color: rgb(11, 127, 184);">school</span>
+                    <div data-dc-tpl="44" style="flex: 1 1 0%;">
+                      <div data-dc-tpl="45" style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 16px; color: rgb(15, 26, 36);">Login as Student</div>
+                      <div data-dc-tpl="46" style="font-size: 12.5px; color: rgb(91, 107, 120); margin-top: 2px;">Lessons, quizzes, assignments, progress</div>
+                    </div>
+                    <span data-dc-tpl="47" style="font-family: &quot;Material Symbols Rounded&quot;; font-size: 22px; color: rgb(138, 154, 166);">chevron_right</span>
+                  </div>
+                  <div data-dc-tpl="48" class="scp1" style="display: flex; align-items: center; gap: 14px; padding: 18px 20px; border-radius: 18px; background: rgb(245, 144, 26); cursor: pointer; box-shadow: rgba(0, 0, 0, 0.18) 0px 10px 26px;">
+                    <span data-dc-tpl="49" style="font-family: &quot;Material Symbols Rounded&quot;; font-size: 26px; color: rgb(61, 34, 0);">cast_for_education</span>
+                    <div data-dc-tpl="50" style="flex: 1 1 0%;">
+                      <div data-dc-tpl="51" style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 16px; color: rgb(43, 24, 0);">Login as Teacher</div>
+                      <div data-dc-tpl="52" style="font-size: 12.5px; color: rgb(90, 54, 8); margin-top: 2px;">Publish courses, get paid to M-PESA</div>
+                    </div>
+                    <span data-dc-tpl="53" style="font-family: &quot;Material Symbols Rounded&quot;; font-size: 22px; color: rgb(122, 78, 16);">chevron_right</span>
+                  </div>
+                  <div data-dc-tpl="54" style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 8px;">
+                    <div data-dc-tpl="55" class="scp2" style="font-size: 12.5px; color: rgba(255, 255, 255, 0.75); cursor: pointer; padding: 8px;">Admin console</div>
+                    <div data-dc-tpl="56" style="width: 1px; height: 12px; background: rgba(255, 255, 255, 0.3);"></div>
+                    <div data-dc-tpl="57" class="scp2" style="font-size: 12.5px; color: rgba(255, 255, 255, 0.75); cursor: pointer; padding: 8px;">Create account</div>
+                  </div>
+                </div>
+              </div>
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+          </div>
+
+          
+          
+          
+          
+        </div>
+          
+          
+          
+          
+      </div></div><div style="position: absolute; bottom: 0px; left: 0px; right: 0px; z-index: 60; height: 34px; display: flex; justify-content: center; align-items: flex-end; padding-bottom: 8px; pointer-events: none;"><div style="width: 139px; height: 5px; border-radius: 100px; background: rgba(0, 0, 0, 0.25);"></div></div></div></div>
+    </div>
+  </div>
+
+  <div data-dc-tpl="1435" style="max-width: 1220px; margin: 56px auto 0px;">
+    <div data-dc-tpl="1436" style="display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;">
+      <div data-dc-tpl="1437" style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 17px; color: rgb(15, 26, 36);">Same system, bigger screens</div>
+      <div data-dc-tpl="1438" style="font-size: 13px; color: rgb(91, 107, 120);">Tablet keeps the phone's cards on a wider grid; desktop promotes the tab bar to a sidebar.</div>
+    </div>
+
+    <div data-dc-tpl="1439" style="margin-top: 20px; overflow-x: auto; padding-bottom: 14px;">
+      <div data-dc-tpl="1440" style="display: flex; gap: 28px; align-items: flex-start; min-width: min-content;">
+
+        <div data-dc-tpl="1441">
+          <div data-dc-tpl="1442" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 10px; letter-spacing: 0.16em; color: rgb(138, 154, 166); margin-bottom: 9px;">TABLET · 834 × 640 · STUDENT HOME</div>
+          <div data-dc-tpl="1443" style="width: 834px; height: 640px; border-radius: 26px; background: rgb(244, 246, 248); box-shadow: rgba(15, 26, 36, 0.14) 0px 24px 50px, rgba(15, 26, 36, 0.1) 0px 0px 0px 1px; overflow: hidden; display: flex; box-sizing: border-box;">
+            <div data-dc-tpl="1444" style="width: 88px; flex: 0 0 auto; background: rgb(255, 255, 255); border-right: 1px solid rgba(15, 26, 36, 0.07); display: flex; flex-direction: column; align-items: center; padding: 18px 0px; gap: 6px;">
+              <img data-dc-tpl="1445" src="./mth-mark.png" alt="" style="width: 40px; height: auto; display: block; margin-bottom: 14px;">
+              <div data-dc-tpl="1446" style="display: flex; flex-direction: column; align-items: center; gap: 4px; width: 64px; padding: 10px 0px; border-radius: 14px; background: rgb(234, 247, 254); color: rgb(11, 127, 184);"><span data-dc-tpl="1447" style="font-family: &quot;Material Symbols Rounded&quot;; font-size: 23px;">home</span><span data-dc-tpl="1448" style="font-size: 9.5px; font-weight: 500;">Home</span></div>
+              <div data-dc-tpl="1449" style="display: flex; flex-direction: column; align-items: center; gap: 4px; width: 64px; padding: 10px 0px; border-radius: 14px; color: rgb(138, 154, 166);"><span data-dc-tpl="1450" style="font-family: &quot;Material Symbols Rounded&quot;; font-size: 23px;">travel_explore</span><span data-dc-tpl="1451" style="font-size: 9.5px; font-weight: 500;">Explore</span></div>
+              <div data-dc-tpl="1452" style="display: flex; flex-direction: column; align-items: center; gap: 4px; width: 64px; padding: 10px 0px; border-radius: 14px; color: rgb(138, 154, 166);"><span data-dc-tpl="1453" style="font-family: &quot;Material Symbols Rounded&quot;; font-size: 23px;">menu_book</span><span data-dc-tpl="1454" style="font-size: 9.5px; font-weight: 500;">Learn</span></div>
+              <div data-dc-tpl="1455" style="display: flex; flex-direction: column; align-items: center; gap: 4px; width: 64px; padding: 10px 0px; border-radius: 14px; color: rgb(138, 154, 166);"><span data-dc-tpl="1456" style="font-family: &quot;Material Symbols Rounded&quot;; font-size: 23px;">assignment</span><span data-dc-tpl="1457" style="font-size: 9.5px; font-weight: 500;">Tasks</span></div>
+              <div data-dc-tpl="1458" style="display: flex; flex-direction: column; align-items: center; gap: 4px; width: 64px; padding: 10px 0px; border-radius: 14px; color: rgb(138, 154, 166);"><span data-dc-tpl="1459" style="font-family: &quot;Material Symbols Rounded&quot;; font-size: 23px;">trending_up</span><span data-dc-tpl="1460" style="font-size: 9.5px; font-weight: 500;">Progress</span></div>
+            </div>
+            <div data-dc-tpl="1461" style="flex: 1 1 0%; overflow: hidden; padding: 24px 26px; box-sizing: border-box;">
+              <div data-dc-tpl="1462" style="display: flex; align-items: center; gap: 14px;">
+                <div data-dc-tpl="1463" style="width: 44px; height: 44px; border-radius: 14px; background: rgb(245, 144, 26); display: flex; align-items: center; justify-content: center; font-family: Archivo, sans-serif; font-weight: 800; font-size: 16px; color: rgb(43, 24, 0);">AK</div>
+                <div data-dc-tpl="1464" style="flex: 1 1 0%;">
+                  <div data-dc-tpl="1465" style="font-size: 12.5px; color: rgb(91, 107, 120);">Karibu tena,</div>
+                  <div data-dc-tpl="1466" style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 18px; color: rgb(15, 26, 36);">Amina Kariuki · Grade 6</div>
+                </div>
+                <div data-dc-tpl="1467" style="display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-radius: 13px; background: rgb(255, 255, 255); border: 1px solid rgba(15, 26, 36, 0.08);">
+                  <span data-dc-tpl="1468" style="font-family: &quot;Material Symbols Rounded&quot;; font-size: 19px; color: rgb(138, 154, 166);">search</span>
+                  <span data-dc-tpl="1469" style="font-size: 13px; color: rgb(138, 154, 166);">Find a teacher…</span>
+                </div>
+              </div>
+
+              <div data-dc-tpl="1470" style="display: grid; grid-template-columns: 1.35fr 1fr; gap: 16px; margin-top: 20px;">
+                <div data-dc-tpl="1471" style="padding: 18px; border-radius: 18px; background: rgb(255, 255, 255); border: 1px solid rgba(15, 26, 36, 0.07);">
+                  <div data-dc-tpl="1472" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 9.5px; letter-spacing: 0.16em; color: rgb(138, 154, 166);">CONTINUE LEARNING</div>
+                  <div data-dc-tpl="1473" style="display: flex; gap: 14px; margin-top: 12px;">
+                    <div data-dc-tpl="1474" style="width: 104px; height: 74px; border-radius: 13px; flex: 0 0 auto; background: repeating-linear-gradient(135deg, rgb(11, 127, 184) 0px, rgb(11, 127, 184) 8px, rgb(10, 110, 159) 8px, rgb(10, 110, 159) 16px); display: flex; align-items: center; justify-content: center;"><span data-dc-tpl="1475" style="font-family: &quot;Material Symbols Rounded&quot;; font-size: 28px; color: rgba(255, 255, 255, 0.9);">play_circle</span></div>
+                    <div data-dc-tpl="1476" style="flex: 1 1 0%;">
+                      <div data-dc-tpl="1477" style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 15px; color: rgb(15, 26, 36);">Fractions: adding unlike denominators</div>
+                      <div data-dc-tpl="1478" style="font-size: 12px; color: rgb(91, 107, 120); margin-top: 3px;">Mathematics · Mr. Otieno · Lesson 4 of 12</div>
+                      <div data-dc-tpl="1479" style="height: 6px; border-radius: 99px; background: rgb(231, 236, 240); margin-top: 12px; overflow: hidden;"><div data-dc-tpl="1480" style="width: 38%; height: 100%; background: rgb(245, 144, 26); border-radius: 99px;"></div></div>
+                    </div>
+                  </div>
+                </div>
+                <div data-dc-tpl="1481" style="padding: 18px; border-radius: 18px; background: rgb(15, 26, 36);">
+                  <div data-dc-tpl="1482" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 9.5px; letter-spacing: 0.16em; color: rgba(255, 255, 255, 0.5);">THIS WEEK</div>
+                  <div data-dc-tpl="1483" style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 26px; color: rgb(255, 255, 255); margin-top: 8px;">6h 20m</div>
+                  <div data-dc-tpl="1484" style="display: flex; align-items: flex-end; gap: 6px; height: 52px; margin-top: 12px;">
+                    <div data-dc-tpl="1485" style="flex: 1 1 0%; height: 48%; background: rgb(0, 168, 240); border-radius: 5px 5px 0px 0px;"></div>
+                    <div data-dc-tpl="1486" style="flex: 1 1 0%; height: 70%; background: rgb(0, 168, 240); border-radius: 5px 5px 0px 0px;"></div>
+                    <div data-dc-tpl="1487" style="flex: 1 1 0%; height: 34%; background: rgb(0, 168, 240); border-radius: 5px 5px 0px 0px;"></div>
+                    <div data-dc-tpl="1488" style="flex: 1 1 0%; height: 88%; background: rgb(245, 144, 26); border-radius: 5px 5px 0px 0px;"></div>
+                    <div data-dc-tpl="1489" style="flex: 1 1 0%; height: 56%; background: rgb(0, 168, 240); border-radius: 5px 5px 0px 0px;"></div>
+                    <div data-dc-tpl="1490" style="flex: 1 1 0%; height: 20%; background: rgba(255, 255, 255, 0.22); border-radius: 5px 5px 0px 0px;"></div>
+                    <div data-dc-tpl="1491" style="flex: 1 1 0%; height: 14%; background: rgba(255, 255, 255, 0.22); border-radius: 5px 5px 0px 0px;"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div data-dc-tpl="1492" style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 15px; color: rgb(15, 26, 36); margin: 22px 0px 12px;">My CBC courses</div>
+              <div data-dc-tpl="1493" style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 12px;">
+                <div data-dc-tpl="1494" style="padding: 15px; border-radius: 16px; background: rgb(255, 255, 255); border: 1px solid rgba(15, 26, 36, 0.07);"><span data-dc-tpl="1495" style="font-family: &quot;Material Symbols Rounded&quot;; font-size: 24px; color: rgb(11, 127, 184);">calculate</span><div data-dc-tpl="1496" style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 13.5px; color: rgb(15, 26, 36); margin-top: 8px;">Mathematics</div><div data-dc-tpl="1497" style="font-size: 11px; color: rgb(91, 107, 120); margin-top: 2px;">Mr. Otieno · 38%</div></div>
+                <div data-dc-tpl="1498" style="padding: 15px; border-radius: 16px; background: rgb(255, 255, 255); border: 1px solid rgba(15, 26, 36, 0.07);"><span data-dc-tpl="1499" style="font-family: &quot;Material Symbols Rounded&quot;; font-size: 24px; color: rgb(0, 168, 240);">science</span><div data-dc-tpl="1500" style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 13.5px; color: rgb(15, 26, 36); margin-top: 8px;">Int. Science</div><div data-dc-tpl="1501" style="font-size: 11px; color: rgb(91, 107, 120); margin-top: 2px;">Ms. Njeri · 71%</div></div>
+                <div data-dc-tpl="1502" style="padding: 15px; border-radius: 16px; background: rgb(255, 255, 255); border: 1px solid rgba(15, 26, 36, 0.07);"><span data-dc-tpl="1503" style="font-family: &quot;Material Symbols Rounded&quot;; font-size: 24px; color: rgb(245, 144, 26);">translate</span><div data-dc-tpl="1504" style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 13.5px; color: rgb(15, 26, 36); margin-top: 8px;">Kiswahili</div><div data-dc-tpl="1505" style="font-size: 11px; color: rgb(91, 107, 120); margin-top: 2px;">Mw. Hassan · 55%</div></div>
+                <div data-dc-tpl="1506" style="padding: 15px; border-radius: 16px; background: rgb(255, 255, 255); border: 1px solid rgba(15, 26, 36, 0.07);"><span data-dc-tpl="1507" style="font-family: &quot;Material Symbols Rounded&quot;; font-size: 24px; color: rgb(237, 28, 36);">menu_book</span><div data-dc-tpl="1508" style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 13.5px; color: rgb(15, 26, 36); margin-top: 8px;">English</div><div data-dc-tpl="1509" style="font-size: 11px; color: rgb(91, 107, 120); margin-top: 2px;">Ms. Wairimu · 42%</div></div>
+              </div>
+
+              <div data-dc-tpl="1510" style="display: flex; align-items: baseline; justify-content: space-between; margin: 20px 0px 12px;">
+                <div data-dc-tpl="1511" style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 15px; color: rgb(15, 26, 36);">Talent clubs near you</div>
+                <div data-dc-tpl="1512" style="font-size: 12.5px; color: rgb(11, 111, 164);">Browse all 38</div>
+              </div>
+              <div data-dc-tpl="1513" style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 12px;">
+                <div data-dc-tpl="1514" style="border-radius: 16px; overflow: hidden; background: rgb(255, 255, 255); border: 1px solid rgba(15, 26, 36, 0.07);">
+                  <div data-dc-tpl="1515" style="height: 62px; background: repeating-linear-gradient(45deg, rgb(237, 28, 36) 0px, rgb(237, 28, 36) 9px, rgb(201, 21, 28) 9px, rgb(201, 21, 28) 18px); display: flex; align-items: flex-end; padding: 7px;"><span data-dc-tpl="1516" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 8px; letter-spacing: 0.06em; color: rgba(255, 255, 255, 0.9); background: rgba(0, 0, 0, 0.28); padding: 3px 5px; border-radius: 4px;">PHOTO: KARATE</span></div>
+                  <div data-dc-tpl="1517" style="padding: 10px 12px 12px;"><div data-dc-tpl="1518" style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 13px; color: rgb(15, 26, 36);">Karate</div><div data-dc-tpl="1519" style="font-size: 11px; color: rgb(91, 107, 120); margin-top: 2px;">Sensei Kimani · 4.8 ★</div><div data-dc-tpl="1520" style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 12px; color: rgb(179, 82, 10); margin-top: 6px;">KES 500 / month</div></div>
+                </div>
+                <div data-dc-tpl="1521" style="border-radius: 16px; overflow: hidden; background: rgb(255, 255, 255); border: 1px solid rgba(15, 26, 36, 0.07);">
+                  <div data-dc-tpl="1522" style="height: 62px; background: repeating-linear-gradient(45deg, rgb(11, 127, 184) 0px, rgb(11, 127, 184) 9px, rgb(9, 95, 139) 9px, rgb(9, 95, 139) 18px); display: flex; align-items: flex-end; padding: 7px;"><span data-dc-tpl="1523" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 8px; letter-spacing: 0.06em; color: rgba(255, 255, 255, 0.9); background: rgba(0, 0, 0, 0.28); padding: 3px 5px; border-radius: 4px;">PHOTO: CHESS</span></div>
+                  <div data-dc-tpl="1524" style="padding: 10px 12px 12px;"><div data-dc-tpl="1525" style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 13px; color: rgb(15, 26, 36);">Chess</div><div data-dc-tpl="1526" style="font-size: 11px; color: rgb(91, 107, 120); margin-top: 2px;">Ms. Mwangi · 4.7 ★</div><div data-dc-tpl="1527" style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 12px; color: rgb(30, 122, 61); margin-top: 6px;">Free</div></div>
+                </div>
+                <div data-dc-tpl="1528" style="border-radius: 16px; overflow: hidden; background: rgb(255, 255, 255); border: 1px solid rgba(15, 26, 36, 0.07);">
+                  <div data-dc-tpl="1529" style="height: 62px; background: repeating-linear-gradient(45deg, rgb(245, 144, 26) 0px, rgb(245, 144, 26) 9px, rgb(217, 124, 14) 9px, rgb(217, 124, 14) 18px); display: flex; align-items: flex-end; padding: 7px;"><span data-dc-tpl="1530" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 8px; letter-spacing: 0.06em; color: rgba(0, 0, 0, 0.65); background: rgba(255, 255, 255, 0.55); padding: 3px 5px; border-radius: 4px;">PHOTO: PIANO</span></div>
+                  <div data-dc-tpl="1531" style="padding: 10px 12px 12px;"><div data-dc-tpl="1532" style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 13px; color: rgb(15, 26, 36);">Piano</div><div data-dc-tpl="1533" style="font-size: 11px; color: rgb(91, 107, 120); margin-top: 2px;">Ms. Achieng · new</div><div data-dc-tpl="1534" style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 12px; color: rgb(179, 82, 10); margin-top: 6px;">KES 800 / month</div></div>
+                </div>
+                <div data-dc-tpl="1535" style="border-radius: 16px; overflow: hidden; background: rgb(255, 255, 255); border: 1px solid rgba(15, 26, 36, 0.07);">
+                  <div data-dc-tpl="1536" style="height: 62px; background: repeating-linear-gradient(45deg, rgb(91, 107, 120) 0px, rgb(91, 107, 120) 9px, rgb(71, 85, 95) 9px, rgb(71, 85, 95) 18px); display: flex; align-items: flex-end; padding: 7px;"><span data-dc-tpl="1537" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 8px; letter-spacing: 0.06em; color: rgba(255, 255, 255, 0.9); background: rgba(0, 0, 0, 0.28); padding: 3px 5px; border-radius: 4px;">PHOTO: FOOTBALL</span></div>
+                  <div data-dc-tpl="1538" style="padding: 10px 12px 12px;"><div data-dc-tpl="1539" style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 13px; color: rgb(15, 26, 36);">Football</div><div data-dc-tpl="1540" style="font-size: 11px; color: rgb(91, 107, 120); margin-top: 2px;">Coach Barasa · 4.6 ★</div><div data-dc-tpl="1541" style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 12px; color: rgb(179, 82, 10); margin-top: 6px;">KES 400 / month</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-dc-tpl="1542">
+          <div data-dc-tpl="1543" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 10px; letter-spacing: 0.16em; color: rgb(138, 154, 166); margin-bottom: 9px;">DESKTOP · 1280 × 540 · TEACHER WALLET</div>
+          <div data-dc-tpl="1544" style="width: 1280px; height: 540px; border-radius: 14px; background: rgb(244, 246, 248); box-shadow: rgba(15, 26, 36, 0.14) 0px 24px 50px, rgba(15, 26, 36, 0.1) 0px 0px 0px 1px; overflow: hidden; box-sizing: border-box; display: flex; flex-direction: column;">
+            <div data-dc-tpl="1545" style="flex: 0 0 auto; height: 38px; background: rgb(231, 236, 240); display: flex; align-items: center; gap: 8px; padding: 0px 14px; border-bottom: 1px solid rgba(15, 26, 36, 0.08);">
+              <span data-dc-tpl="1546" style="width: 11px; height: 11px; border-radius: 50%; background: rgb(237, 28, 36);"></span>
+              <span data-dc-tpl="1547" style="width: 11px; height: 11px; border-radius: 50%; background: rgb(245, 144, 26);"></span>
+              <span data-dc-tpl="1548" style="width: 11px; height: 11px; border-radius: 50%; background: rgb(0, 168, 240);"></span>
+              <div data-dc-tpl="1549" style="margin-left: 14px; padding: 5px 14px; border-radius: 7px; background: rgb(255, 255, 255); font-family: &quot;DM Mono&quot;, monospace; font-size: 10.5px; color: rgb(91, 107, 120);">app.moderntalenthub.co.ke/teacher/wallet</div>
+            </div>
+            <div data-dc-tpl="1550" style="flex: 1 1 0%; display: flex; overflow: hidden;">
+              <div data-dc-tpl="1551" style="width: 230px; flex: 0 0 auto; background: rgb(15, 26, 36); padding: 22px 16px; box-sizing: border-box;">
+                <div data-dc-tpl="1552" style="display: flex; align-items: center; gap: 10px; margin-bottom: 22px;">
+                  <img data-dc-tpl="1553" src="./mth-mark.png" alt="" style="width: 34px; height: auto; background: rgb(255, 255, 255); border-radius: 9px; padding: 3px; box-sizing: border-box;">
+                  <div data-dc-tpl="1554" style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 11.5px; letter-spacing: 0.03em; color: rgb(255, 255, 255); line-height: 1.25;">MODERN<br data-dc-tpl="1555">TALENT HUB</div>
+                </div>
+                <div data-dc-tpl="1556" style="display: flex; align-items: center; gap: 11px; padding: 11px 13px; border-radius: 11px; color: rgba(255, 255, 255, 0.6);"><span data-dc-tpl="1557" style="font-family: &quot;Material Symbols Rounded&quot;; font-size: 20px;">dashboard</span><span data-dc-tpl="1558" style="font-size: 13px;">Dashboard</span></div>
+                <div data-dc-tpl="1559" style="display: flex; align-items: center; gap: 11px; padding: 11px 13px; border-radius: 11px; color: rgba(255, 255, 255, 0.6);"><span data-dc-tpl="1560" style="font-family: &quot;Material Symbols Rounded&quot;; font-size: 20px;">video_library</span><span data-dc-tpl="1561" style="font-size: 13px;">My courses</span></div>
+                <div data-dc-tpl="1562" style="display: flex; align-items: center; gap: 11px; padding: 11px 13px; border-radius: 11px; color: rgba(255, 255, 255, 0.6);"><span data-dc-tpl="1563" style="font-family: &quot;Material Symbols Rounded&quot;; font-size: 20px;">groups</span><span data-dc-tpl="1564" style="font-size: 13px;">Students</span></div>
+                <div data-dc-tpl="1565" style="display: flex; align-items: center; gap: 11px; padding: 11px 13px; border-radius: 11px; background: rgba(0, 168, 240, 0.16); color: rgb(127, 212, 248);"><span data-dc-tpl="1566" style="font-family: &quot;Material Symbols Rounded&quot;; font-size: 20px;">account_balance_wallet</span><span data-dc-tpl="1567" style="font-size: 13px; font-weight: 500;">Wallet</span></div>
+                <div data-dc-tpl="1568" style="display: flex; align-items: center; gap: 11px; padding: 11px 13px; border-radius: 11px; color: rgba(255, 255, 255, 0.6);"><span data-dc-tpl="1569" style="font-family: &quot;Material Symbols Rounded&quot;; font-size: 20px;">insights</span><span data-dc-tpl="1570" style="font-size: 13px;">Earnings</span></div>
+                <div data-dc-tpl="1571" style="margin-top: 24px; padding: 14px; border-radius: 14px; background: rgba(255, 255, 255, 0.06);">
+                  <div data-dc-tpl="1572" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 9px; letter-spacing: 0.14em; color: rgba(255, 255, 255, 0.45);">YOUR SHARE</div>
+                  <div data-dc-tpl="1573" style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 22px; color: rgb(245, 144, 26); margin-top: 5px;">70%</div>
+                  <div data-dc-tpl="1574" style="font-size: 11px; color: rgba(255, 255, 255, 0.5); margin-top: 3px; line-height: 1.45;">of every subscription, paid into your wallet instantly</div>
+                </div>
+              </div>
+
+              <div data-dc-tpl="1575" style="flex: 1 1 0%; padding: 26px 30px; box-sizing: border-box; overflow: hidden;">
+                <div data-dc-tpl="1576" style="display: flex; align-items: center; gap: 16px;">
+                  <div data-dc-tpl="1577" style="flex: 1 1 0%;">
+                    <div data-dc-tpl="1578" style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 22px; color: rgb(15, 26, 36);">My wallet</div>
+                    <div data-dc-tpl="1579" style="font-size: 13px; color: rgb(91, 107, 120); margin-top: 3px;">Mr. Joseph Otieno · verified teacher · Kisumu</div>
+                  </div>
+                  <div data-dc-tpl="1580" style="padding: 11px 18px; border-radius: 12px; background: rgb(30, 122, 61); font-family: Archivo, sans-serif; font-weight: 700; font-size: 13.5px; color: rgb(255, 255, 255);">Withdraw to M-PESA</div>
+                  <div data-dc-tpl="1581" style="width: 40px; height: 40px; border-radius: 12px; background: rgb(255, 241, 224); display: flex; align-items: center; justify-content: center; font-family: Archivo, sans-serif; font-weight: 700; font-size: 13px; color: rgb(179, 82, 10);">JO</div>
+                </div>
+
+                <div data-dc-tpl="1582" style="display: grid; grid-template-columns: 1.15fr 1fr 1fr; gap: 14px; margin-top: 20px;">
+                  <div data-dc-tpl="1583" style="padding: 20px; border-radius: 18px; background: rgb(15, 26, 36);">
+                    <div data-dc-tpl="1584" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 9.5px; letter-spacing: 0.14em; color: rgba(255, 255, 255, 0.5);">AVAILABLE BALANCE</div>
+                    <div data-dc-tpl="1585" style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 30px; color: rgb(255, 255, 255); margin-top: 7px;">KES 48,750</div>
+                    <div data-dc-tpl="1586" style="display: flex; height: 11px; border-radius: 99px; overflow: hidden; margin-top: 14px;"><div data-dc-tpl="1587" style="width: 70%; background: rgb(245, 144, 26);"></div><div data-dc-tpl="1588" style="width: 30%; background: rgb(0, 168, 240);"></div></div>
+                    <div data-dc-tpl="1589" style="display: flex; justify-content: space-between; margin-top: 9px; font-size: 11px; color: rgba(255, 255, 255, 0.6);"><span data-dc-tpl="1590">70% you</span><span data-dc-tpl="1591">30% MTH</span></div>
+                  </div>
+                  <div data-dc-tpl="1592" style="padding: 20px; border-radius: 18px; background: rgb(255, 255, 255); border: 1px solid rgba(15, 26, 36, 0.07);">
+                    <div data-dc-tpl="1593" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 9.5px; letter-spacing: 0.14em; color: rgb(138, 154, 166);">EARNED IN SEPTEMBER</div>
+                    <div data-dc-tpl="1594" style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 26px; color: rgb(15, 26, 36); margin-top: 7px;">KES 18,340</div>
+                    <div data-dc-tpl="1595" style="font-size: 12px; color: rgb(30, 122, 61); margin-top: 6px;">+22% vs August</div>
+                  </div>
+                  <div data-dc-tpl="1596" style="padding: 20px; border-radius: 18px; background: rgb(255, 255, 255); border: 1px solid rgba(15, 26, 36, 0.07);">
+                    <div data-dc-tpl="1597" style="font-family: &quot;DM Mono&quot;, monospace; font-size: 9.5px; letter-spacing: 0.14em; color: rgb(138, 154, 166);">ACTIVE SUBSCRIBERS</div>
+                    <div data-dc-tpl="1598" style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 26px; color: rgb(15, 26, 36); margin-top: 7px;">312</div>
+                    <div data-dc-tpl="1599" style="font-size: 12px; color: rgb(91, 107, 120); margin-top: 6px;">across 7 published courses</div>
+                  </div>
+                </div>
+
+                <div data-dc-tpl="1600" style="margin-top: 20px; border-radius: 18px; background: rgb(255, 255, 255); border: 1px solid rgba(15, 26, 36, 0.07); overflow: hidden;">
+                  <div data-dc-tpl="1601" style="display: flex; align-items: center; padding: 14px 20px; border-bottom: 1px solid rgba(15, 26, 36, 0.07);">
+                    <div data-dc-tpl="1602" style="font-family: Archivo, sans-serif; font-weight: 700; font-size: 14px; color: rgb(15, 26, 36); flex: 1 1 0%;">Recent transactions</div>
+                    <div data-dc-tpl="1603" style="font-size: 12.5px; color: rgb(11, 111, 164);">Export CSV</div>
+                  </div>
+                  <div data-dc-tpl="1604" style="display: grid; grid-template-columns: 1.4fr 1fr 0.8fr 0.8fr 0.8fr; padding: 11px 20px; background: rgb(248, 250, 251); font-family: &quot;DM Mono&quot;, monospace; font-size: 9.5px; letter-spacing: 0.12em; color: rgb(138, 154, 166);">
+                    <span data-dc-tpl="1605">DETAIL</span><span data-dc-tpl="1606">COURSE</span><span data-dc-tpl="1607">GROSS</span><span data-dc-tpl="1608">YOUR 70%</span><span data-dc-tpl="1609">STATUS</span>
+                  </div>
+                  <div data-dc-tpl="1610" style="display: grid; grid-template-columns: 1.4fr 1fr 0.8fr 0.8fr 0.8fr; padding: 13px 20px; border-top: 1px solid rgba(15, 26, 36, 0.06); font-size: 12.5px; color: rgb(58, 74, 86); align-items: center;">
+                    <span data-dc-tpl="1611">Subscription · A. Kariuki</span><span data-dc-tpl="1612">Grade 6 Maths</span><span data-dc-tpl="1613">KES 300</span><span data-dc-tpl="1614" style="font-weight: 700; color: rgb(30, 122, 61);">KES 210</span><span data-dc-tpl="1615"><span data-dc-tpl="1616" style="padding: 4px 9px; border-radius: 6px; background: rgb(237, 249, 241); font-size: 11px; color: rgb(30, 122, 61);">Cleared</span></span>
+                  </div>
+                  <div data-dc-tpl="1617" style="display: grid; grid-template-columns: 1.4fr 1fr 0.8fr 0.8fr 0.8fr; padding: 13px 20px; border-top: 1px solid rgba(15, 26, 36, 0.06); font-size: 12.5px; color: rgb(58, 74, 86); align-items: center;">
+                    <span data-dc-tpl="1618">Subscription · B. Mutiso</span><span data-dc-tpl="1619">Grade 6 Maths</span><span data-dc-tpl="1620">KES 300</span><span data-dc-tpl="1621" style="font-weight: 700; color: rgb(30, 122, 61);">KES 210</span><span data-dc-tpl="1622"><span data-dc-tpl="1623" style="padding: 4px 9px; border-radius: 6px; background: rgb(255, 248, 238); font-size: 11px; color: rgb(179, 82, 10);">Clearing</span></span>
+                  </div>
+                  <div data-dc-tpl="1624" style="display: grid; grid-template-columns: 1.4fr 1fr 0.8fr 0.8fr 0.8fr; padding: 13px 20px; border-top: 1px solid rgba(15, 26, 36, 0.06); font-size: 12.5px; color: rgb(58, 74, 86); align-items: center;">
+                    <span data-dc-tpl="1625">Withdrawal · 0722 118 900</span><span data-dc-tpl="1626">—</span><span data-dc-tpl="1627">KES 15,000</span><span data-dc-tpl="1628" style="font-weight: 700; color: rgb(201, 21, 28);">−15,000</span><span data-dc-tpl="1629"><span data-dc-tpl="1630" style="padding: 4px 9px; border-radius: 6px; background: rgb(237, 249, 241); font-size: 11px; color: rgb(30, 122, 61);">Paid out</span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div></div></div></div>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;$preview&quot;:{&quot;width&quot;:1240,&quot;height&quot;:980}}">
+const QS = [
+  { q: "Which is the correct first step when adding 1/3 + 1/4?", opts: ["Add the numerators", "Find the lowest common multiple of 3 and 4", "Multiply both denominators by 2", "Subtract the smaller denominator"], a: 1 },
+  { q: "1/3 + 1/4 equals…", opts: ["2/7", "7/12", "1/12", "2/12"], a: 1 },
+  { q: "Which pair are equivalent fractions?", opts: ["2/3 and 4/9", "3/5 and 6/10", "1/2 and 2/5", "4/7 and 8/21"], a: 1 }
+];
+
+const MAT = {
+  video: { icon: 'movie', color: '#0B7FB8', label: 'Video' },
+  pdf: { icon: 'picture_as_pdf', color: '#C9151C', label: 'PDF' },
+  doc: { icon: 'description', color: '#0B6FA4', label: 'Word' },
+  ppt: { icon: 'slideshow', color: '#B3520A', label: 'PowerPoint' },
+  image: { icon: 'image', color: '#1E7A3D', label: 'Image' },
+  audio: { icon: 'audiotrack', color: '#7A3DBF', label: 'Audio' },
+  other: { icon: 'attach_file', color: '#5B6B78', label: 'Other' }
+};
+
+const SEED = [
+  {
+    id: 'c1', title: 'Beginner Piano', desc: 'A gentle first term at the keyboard for complete beginners.',
+    grp: 'performing', cat: 'music', sub: 'Piano', bill: 'month', level: 'Beginner', price: 800, free: false, duration: '8 weeks',
+    objectives: 'Name every white key; play three chords; read simple notation.',
+    requirements: 'Access to a keyboard or piano (49 keys minimum).',
+    status: 'published', students: 184, earnings: 103040, cover: '#0B7FB8',
+    modules: [
+      { id: 'm1', title: 'Module 1: Introduction', lessons: [
+        { id: 'l1', title: 'Lesson 1: Getting started', topics: 'Posture, hand shape, first sounds', kind: 'video', published: true, materials: [
+          { id: 'f1', name: 'getting-started.mp4', type: 'video', status: 'Ready' },
+          { id: 'f2', name: 'Posture guide.pdf', type: 'pdf', status: 'Ready' }
+        ] },
+        { id: 'l2', title: 'Lesson 2: Piano keys', topics: 'White keys, black keys, middle C, octaves', kind: 'video', published: true, materials: [
+          { id: 'f3', name: 'piano-keys.mp4', type: 'video', status: 'Ready' },
+          { id: 'f4', name: 'Keyboard map.jpg', type: 'image', status: 'Ready' }
+        ] }
+      ] },
+      { id: 'm2', title: 'Module 2: Basic skills', lessons: [
+        { id: 'l3', title: 'Lesson 3: First chords', topics: 'C, F and G major triads', kind: 'video', published: false, materials: [
+          { id: 'f5', name: 'first-chords.mp4', type: 'video', status: 'Uploading… 62%' }
+        ] }
+      ] }
+    ]
+  },
+  {
+    id: 'c2', title: 'Karate — White to Yellow Belt', desc: 'Beginner karate syllabus with weekly live sessions.',
+    grp: 'martial', cat: 'karate', sub: 'Karate', bill: 'lesson', level: 'All levels', price: 500, free: false, duration: '12 weeks',
+    objectives: 'Master basic stances, three kata and safe sparring etiquette.',
+    requirements: 'Loose clothing or a gi. No prior experience needed.',
+    status: 'published', students: 96, earnings: 33600, cover: '#ED1C24',
+    modules: [
+      { id: 'm3', title: 'Module 1: Foundations', lessons: [
+        { id: 'l4', title: 'Lesson 1: Stances and bowing', topics: 'Dojo etiquette, zenkutsu-dachi, kiba-dachi', kind: 'video', published: true, materials: [
+          { id: 'f6', name: 'stances.mp4', type: 'video', status: 'Ready' },
+          { id: 'f7', name: 'Belt syllabus.docx', type: 'doc', status: 'Ready' }
+        ] }
+      ] }
+    ]
+  },
+  {
+    id: 'c3', title: 'Scratch Game Building', desc: 'Build three playable games and publish them.',
+    grp: 'creative', cat: 'coding', sub: 'Game Development', bill: 'once', level: 'Beginner', price: 0, free: true, duration: '6 weeks',
+    objectives: 'Use loops, variables and collision to build a working game.',
+    requirements: 'A laptop or tablet with a browser.',
+    status: 'draft', students: 0, earnings: 0, cover: '#0F1A24',
+    modules: [{ id: 'm4', title: 'Module 1: Getting set up', lessons: [] }]
+  }
+];
+
+const BLANK = { title: '', desc: '', grp: '', cat: '', sub: '', bill: 'month', level: 'Beginner', price: 500, free: false, duration: '8 weeks', objectives: '', requirements: '' };
+
+const CATS = [
+  { id: 'sports', num: '1', name: 'Sports', color: '#00A8F0', items: [
+    { id: 'skating', name: 'Skating', icon: 'roller_skating', subs: ['Roller Skating', 'Ice Skating', 'Other Skating'] },
+    { id: 'football', name: 'Football', icon: 'sports_soccer', subs: [] },
+    { id: 'archery', name: 'Archery', icon: 'sports_score', subs: [] }
+  ] },
+  { id: 'martial', num: '2', name: 'Martial Arts', color: '#ED1C24', items: [
+    { id: 'karate', name: 'Karate', icon: 'sports_martial_arts', subs: [] },
+    { id: 'taekwondo', name: 'Taekwondo', icon: 'sports_kabaddi', subs: [] },
+    { id: 'kickboxing', name: 'Kickboxing', icon: 'sports_mma', subs: [] }
+  ] },
+  { id: 'performing', num: '3', name: 'Performing Arts & Music', color: '#F5901A', items: [
+    { id: 'ballet', name: 'Ballet', icon: 'accessibility_new', subs: [] },
+    { id: 'dance', name: 'Modern Dance', icon: 'music_video', subs: [] },
+    { id: 'gymnastics', name: 'Gymnastics', icon: 'sports_gymnastics', subs: [] },
+    { id: 'music', name: 'Music', icon: 'music_note', subs: ['Piano', 'Guitar', 'Drums', 'Violin'] }
+  ] },
+  { id: 'creative', num: '4', name: 'Creative, Tech & Mind Games', color: '#0B7FB8', items: [
+    { id: 'coding', name: 'Coding', icon: 'code', subs: ['Web Development', 'Programming', 'App Development', 'Game Development'] },
+    { id: 'robotics', name: 'Robotics', icon: 'smart_toy', subs: ['Robotics Fundamentals', 'Electronics', 'Robot Building'] },
+    { id: 'art', name: 'Art & Craft', icon: 'palette', subs: ['Drawing', 'Painting', 'Craft Making'] },
+    { id: 'chess', name: 'Chess', icon: 'psychology', subs: [] }
+  ] }
+];
+const ITEMS = (function () { const o = []; CATS.forEach((g) => g.items.forEach((it) => o.push(Object.assign({ group: g.id, groupName: g.name, color: g.color }, it)))); return o; })();
+const ITEM = (id) => ITEMS.filter((i) => i.id === id)[0];
+
+const LESSONS = [
+  { title: 'What is a fraction?', meta: 'Video 8:12 · completed', state: 'done', go: 'sLesson', icon: 'play_arrow', tint: '#0B7FB8', bg: '#EAF7FE' },
+  { title: 'Equivalent fractions', meta: 'Video 6:40 · completed', state: 'done', go: 'sLesson', icon: 'play_arrow', tint: '#0B7FB8', bg: '#EAF7FE' },
+  { title: 'Comparing fractions', meta: 'Video 7:05 · completed', state: 'done', go: 'sLesson', icon: 'play_arrow', tint: '#0B7FB8', bg: '#EAF7FE' },
+  { title: 'Adding unlike denominators', meta: 'Video 11:05 · in progress', state: 'now', go: 'sLesson', icon: 'play_arrow', tint: '#0B7FB8', bg: '#0B7FB8' },
+  { title: 'Quiz: fractions check-up', meta: '3 questions · 5 min', state: 'open', go: 'sQuiz', icon: 'quiz', tint: '#B3520A', bg: '#FFF1E0' },
+  { title: 'Assignment: worksheet 4', meta: 'Due Fri 12 Sep', state: 'open', go: 'sAssign', icon: 'upload_file', tint: '#C9151C', bg: '#FDE7E8', urgent: true },
+  { title: 'Mixed numbers', meta: 'Unlocks after the quiz', state: 'locked', go: 'sLesson', icon: 'lock', tint: '#8A9AA6', bg: '#EEF1F4' }
+];
+
+const BILLS = [
+  { k: 'month', teacher: 'Charge Per Month', student: 'Monthly subscription', unit: 'per month', short: '/mo' },
+  { k: 'week', teacher: 'Charge Per Week', student: 'Weekly subscription', unit: 'per week', short: '/wk' },
+  { k: 'lesson', teacher: 'Charge Per Lesson / Session', student: 'Per lesson fee', unit: 'per lesson', short: '/lesson' },
+  { k: 'day', teacher: 'Charge Per Day', student: 'Daily pass', unit: 'per day', short: '/day' },
+  { k: 'once', teacher: 'One-Time Payment', student: 'Full course access', unit: 'one-time', short: ' once' }
+];
+const BILL = (k) => BILLS.filter((b) => b.k === k)[0] || BILLS[0];
+
+const TEACHERS = [
+  { bill: 'lesson', n: 'Coach Brian Kiptoo', v: 1, item: 'skating', sub: 'Roller Skating', b: 'Roller skating · balance, turns, safety', r: '4.5', rev: 33, price: 400, lvl: 'Beginner', age: '5–14', loc: 'Nairobi', tint: '#00A8F0' },
+  { bill: 'month', n: 'Coach Victor Barasa', v: 1, item: 'football', sub: 'Football', b: 'Football · ball control and small-side games', r: '4.6', rev: 87, price: 450, lvl: 'All levels', age: '6–17', loc: 'Nairobi', tint: '#0B8F6A' },
+  { bill: 'lesson', n: 'Coach Alice Cherono', v: 0, item: 'archery', sub: 'Archery', b: 'Archery · stance, aim and range safety', r: 'New', rev: 0, price: 700, lvl: 'Beginner', age: '10–17', loc: 'Eldoret', tint: '#5B6B78' },
+  { bill: 'lesson', n: 'Sensei Samuel Kimani', v: 1, item: 'karate', sub: 'Karate', b: 'Karate · white to green belt', r: '4.8', rev: 96, price: 500, lvl: 'All levels', age: '6–17', loc: 'Nairobi', tint: '#ED1C24' },
+  { bill: 'month', n: 'Coach Mercy Wanjala', v: 1, item: 'taekwondo', sub: 'Taekwondo', b: 'Taekwondo forms and sparring basics', r: '4.6', rev: 41, price: 450, lvl: 'Beginner', age: '8–17', loc: 'Eldoret', tint: '#C9151C' },
+  { bill: 'week', n: 'Coach Ali Hassan', v: 1, item: 'kickboxing', sub: 'Kickboxing', b: 'Kickboxing fitness and pad work', r: '4.7', rev: 52, price: 600, lvl: 'Intermediate', age: '12–17', loc: 'Mombasa', tint: '#8F1218' },
+  { bill: 'month', n: 'Ms. Wanjiku Mbugua', v: 1, item: 'ballet', sub: 'Ballet', b: 'Classical ballet · primary to grade 2', r: '4.9', rev: 64, price: 1000, lvl: 'Beginner', age: '4–12', loc: 'Nairobi', tint: '#D98BA8' },
+  { bill: 'month', n: 'Mr. Collins Otieno', v: 1, item: 'dance', sub: 'Modern Dance', b: 'Afro-fusion and hip-hop choreography', r: '4.7', rev: 118, price: 500, lvl: 'All levels', age: '8–17', loc: 'Kisumu', tint: '#F5901A' },
+  { bill: 'lesson', n: 'Coach Faith Nduta', v: 1, item: 'gymnastics', sub: 'Gymnastics', b: 'Gymnastics · tumbling and floor routines', r: '4.6', rev: 29, price: 550, lvl: 'Beginner', age: '5–14', loc: 'Nakuru', tint: '#D97C0E' },
+  { bill: 'month', n: 'Ms. Sarah Achieng', v: 1, item: 'music', sub: 'Piano', b: 'Piano & music theory · beginner to grade 3', r: '4.9', rev: 128, price: 800, lvl: 'Beginner', age: '6–17', loc: 'Online', tint: '#0B7FB8' },
+  { bill: 'week', n: 'Mr. Daniel Barasa', v: 1, item: 'music', sub: 'Guitar', b: 'Acoustic guitar · chords and rhythm', r: '4.7', rev: 74, price: 600, lvl: 'Beginner', age: '9–17', loc: 'Nairobi', tint: '#095F8B' },
+  { bill: 'lesson', n: 'Mr. Elijah Kones', v: 1, item: 'music', sub: 'Drums', b: 'Drum kit · timing, fills and grooves', r: '4.8', rev: 45, price: 700, lvl: 'All levels', age: '9–17', loc: 'Nairobi', tint: '#0A6E9F' },
+  { bill: 'once', n: 'Mr. Kevin Otieno', v: 1, item: 'coding', sub: 'Programming', b: 'Python from scratch · projects every week', r: '4.9', rev: 312, price: 900, lvl: 'Intermediate', age: '12–17', loc: 'Kisumu', tint: '#0F1A24' },
+  { bill: 'month', n: 'Ms. Grace Mwangi', v: 1, item: 'coding', sub: 'Game Development', b: 'Scratch and Godot game building', r: '4.7', rev: 58, price: 0, lvl: 'Beginner', age: '9–15', loc: 'Nakuru', tint: '#47555F' },
+  { bill: 'once', n: 'Eng. Peter Kilonzo', v: 1, item: 'robotics', sub: 'Robot Building', b: 'Arduino robots · kits provided', r: '4.8', rev: 66, price: 1200, lvl: 'Intermediate', age: '11–17', loc: 'Nairobi', tint: '#1E7A3D' },
+  { bill: 'day', n: 'Ms. Aisha Noor', v: 0, item: 'art', sub: 'Drawing', b: 'Pencil drawing and shading fundamentals', r: 'New', rev: 0, price: 350, lvl: 'Beginner', age: '6–14', loc: 'Mombasa', tint: '#F5901A' },
+  { bill: 'month', n: 'Mr. Peter Mwangi', v: 1, item: 'chess', sub: 'Chess', b: 'Chess · openings, tactics and tournaments', r: '4.7', rev: 91, price: 0, lvl: 'All levels', age: '7–17', loc: 'Nakuru', tint: '#3A4A56' }
+];
+
+const FILE_TYPES = [
+  { k: 'video', label: 'Video file', icon: 'movie', ext: 'mp4', color: '#0B7FB8' },
+  { k: 'pdf', label: 'PDF document', icon: 'picture_as_pdf', ext: 'pdf', color: '#C9151C' },
+  { k: 'doc', label: 'Word document', icon: 'description', ext: 'docx', color: '#0B6FA4' },
+  { k: 'ppt', label: 'PowerPoint', icon: 'slideshow', ext: 'pptx', color: '#B3520A' },
+  { k: 'image', label: 'Image', icon: 'image', ext: 'jpg', color: '#1E7A3D' },
+  { k: 'audio', label: 'Audio file', icon: 'graphic_eq', ext: 'mp3', color: '#8A5AB8' },
+  { k: 'other', label: 'Other file', icon: 'attach_file', ext: 'zip', color: '#5B6B78' }
+];
+
+const SEED_ALT = [
+  {
+    id: 1, title: 'Beginner Piano', desc: 'Sit down at the keyboard with confidence — posture, note reading and your first songs.',
+    cat: 'music', sub: 'Piano', level: 'Beginner', age: '6–12 years', duration: '8 weeks',
+    obj: 'Read simple notation, play with both hands, perform two songs.',
+    req: 'Access to a keyboard or piano (61 keys is enough).',
+    price: 800, paid: true, status: 'published', students: 184, earnings: 103040, tint: '#0B7FB8',
+    modules: [
+      { id: 11, title: 'Module 1 · Introduction', lessons: [
+        { id: 111, title: 'Lesson 1 · Getting started', type: 'video', published: true, desc: 'Meet the instrument, sitting posture and hand shape.', mats: [
+          { id: 1111, name: 'getting-started.mp4', type: 'video', status: 'Ready' },
+          { id: 1112, name: 'Posture guide.pdf', type: 'pdf', status: 'Ready' }
+        ] },
+        { id: 112, title: 'Lesson 2 · Piano keys', type: 'video', published: true, desc: 'White keys, black keys, middle C and octaves.', mats: [
+          { id: 1121, name: 'piano-keys.mp4', type: 'video', status: 'Ready' },
+          { id: 1122, name: 'Keyboard map.jpg', type: 'image', status: 'Ready' }
+        ] }
+      ] },
+      { id: 12, title: 'Module 2 · Basic skills', lessons: [
+        { id: 121, title: 'Lesson 3 · First chords', type: 'video', published: false, desc: 'C, F and G major triads with the right hand.', mats: [
+          { id: 1211, name: 'first-chords.mp4', type: 'video', status: 'Uploading… 62%' }
+        ] }
+      ] }
+    ]
+  },
+  {
+    id: 2, title: 'Karate — Beginner Belt', desc: 'White to yellow belt syllabus with weekly live sessions.',
+    cat: 'martial', sub: 'Karate', level: 'All levels', age: '6–17 years', duration: '12 weeks',
+    obj: 'Master basic stances, three kata and safe sparring etiquette.',
+    req: 'Loose clothing or a gi. No prior experience needed.',
+    price: 500, paid: true, status: 'published', students: 96, earnings: 33600, tint: '#ED1C24',
+    modules: [
+      { id: 21, title: 'Module 1 · Foundations', lessons: [
+        { id: 211, title: 'Lesson 1 · Stances and bowing', type: 'video', published: true, desc: 'Dojo etiquette, zenkutsu-dachi and kiba-dachi.', mats: [
+          { id: 2111, name: 'stances.mp4', type: 'video', status: 'Ready' },
+          { id: 2112, name: 'Belt syllabus.docx', type: 'doc', status: 'Ready' }
+        ] }
+      ] }
+    ]
+  },
+  {
+    id: 3, title: 'Scratch Game Building', desc: 'Build three playable games and publish them.',
+    cat: 'coding', sub: 'Game Development', level: 'Beginner', age: '9–15 years', duration: '6 weeks',
+    obj: 'Use loops, variables and collision to build a working game.',
+    req: 'A laptop or tablet with a browser.',
+    price: 0, paid: false, status: 'draft', students: 0, earnings: 0, tint: '#0F1A24',
+    modules: [
+      { id: 31, title: 'Module 1 · Getting set up', lessons: [
+        { id: 311, title: 'Lesson 1 · Your first sprite', type: 'video', published: false, desc: '', mats: [] }
+      ] }
+    ]
+  }
+];
+
+class Component extends DCLogic {
+  state = {
+    screen: 'role', role: 'student', playing: false, downloaded: false,
+    qi: 0, sel: null, score: 0, revealed: false,
+    uploaded: false, submitted: false,
+    payStep: 0, payPhone: '', pin: '', price: 500, courseType: 'paid',
+    paid: {}, tillStep: 0, copied: false,
+    balance: 48750, wdAmt: 20000, wdDone: false,
+    courses: SEED, form: Object.assign({}, BLANK), editingId: null,
+    cid: 'c1', mid: 'm1', lid: 'l1',
+    confirm: null, rename: null, renameVal: '', picker: false, toast: '',
+    cats: CATS.map((g) => ({ id: g.id, num: g.num, name: g.name, color: g.color, items: g.items.map((i) => ({ id: i.id, name: i.name, icon: i.icon, subs: i.subs.slice() })) })),
+    fItem: null, fSub: null, fFree: false, newCat: '', editCat: null,
+    co: { teacher: 'Sensei Samuel Kimani', title: 'Karate — White to Yellow Belt', blurb: '8 live sessions + 14 videos', amount: 500, bill: 'lesson', tint: '#ED1C24' }
+  };
+
+  uid = (p) => p + Math.random().toString(36).slice(2, 7);
+
+  flash = (msg) => { this.setState({ toast: msg }); setTimeout(() => this.setState({ toast: '' }), 2400); };
+
+  patch = (id, fn) => {
+    const cs = this.state.courses.map((c) => (c.id === id ? JSON.parse(JSON.stringify(c)) : c));
+    const c = cs.filter((x) => x.id === id)[0];
+    if (c) fn(c);
+    this.setState({ courses: cs });
+    return c;
+  };
+
+  course = () => this.state.courses.filter((c) => c.id === this.state.cid)[0] || this.state.courses[0];
+  module = (c) => (c ? c.modules.filter((m) => m.id === this.state.mid)[0] || c.modules[0] : null);
+  lesson = (m) => (m ? m.lessons.filter((l) => l.id === this.state.lid)[0] || m.lessons[0] : null);
+
+  ask = (msg, act) => this.setState({ confirm: { msg: msg, act: act } });
+  closeAsk = () => this.setState({ confirm: null });
+  runAsk = () => { const c = this.state.confirm; this.setState({ confirm: null }); if (c && c.act) c.act(); };
+
+  setForm = (k) => (e) => {
+    const v = e && e.target ? e.target.value : e;
+    this.setState({ form: Object.assign({}, this.state.form, { [k]: k === 'price' ? parseInt(v || 0, 10) : v }) });
+  };
+
+  newCourse = () => this.setState({ screen: 'tCreate', role: 'teacher', editingId: null, form: Object.assign({}, BLANK) });
+
+  editCourse = (id) => {
+    const c = this.state.courses.filter((x) => x.id === id)[0];
+    this.setState({ screen: 'tCreate', role: 'teacher', editingId: id, cid: id, form: { title: c.title, desc: c.desc, cat: c.cat, level: c.level, price: c.price, free: c.free, duration: c.duration, objectives: c.objectives, requirements: c.requirements } });
+  };
+
+  saveCourse = (status) => {
+    const f = this.state.form;
+    if (!f.title.trim()) { this.flash('Give the course a title first'); return; }
+    if (this.state.editingId) {
+      this.patch(this.state.editingId, (c) => { Object.assign(c, f); c.status = status; });
+      this.flash(status === 'published' ? 'Course published — students can see it now' : 'Saved as draft');
+      this.setState({ screen: 'tCourses' });
+    } else {
+      const id = this.uid('c');
+      const c = Object.assign({}, f, { id: id, status: status, students: 0, earnings: 0, cover: '#0B7FB8', modules: [] });
+      this.setState({ courses: this.state.courses.concat([c]), cid: id, editingId: id, screen: 'tCourses' });
+      this.flash(status === 'published' ? 'Published — now add your modules' : 'Draft saved — now add your modules');
+    }
+  };
+
+  togglePublish = (id) => {
+    const c = this.state.courses.filter((x) => x.id === id)[0];
+    const next = c.status === 'published' ? 'draft' : 'published';
+    this.patch(id, (x) => { x.status = next; });
+    this.flash(next === 'published' ? 'Course is live in the marketplace' : 'Unpublished — hidden from students, nothing deleted');
+  };
+
+  addModule = () => {
+    const n = this.course().modules.length + 1;
+    this.patch(this.state.cid, (c) => c.modules.push({ id: this.uid('m'), title: 'Module ' + n + ': Untitled', lessons: [] }));
+    this.flash('Module added');
+  };
+
+  addLesson = (mid) => {
+    this.patch(this.state.cid, (c) => {
+      const m = c.modules.filter((x) => x.id === mid)[0];
+      m.lessons.push({ id: this.uid('l'), title: 'Lesson ' + (m.lessons.length + 1) + ': Untitled', topics: '', kind: 'video', published: false, materials: [] });
+    });
+    this.flash('Lesson added');
+  };
+
+  move = (arr, i, d) => { const j = i + d; if (j < 0 || j >= arr.length) return; const t = arr[i]; arr[i] = arr[j]; arr[j] = t; };
+
+  moveModule = (i, d) => this.patch(this.state.cid, (c) => this.move(c.modules, i, d));
+  moveLesson = (mid, i, d) => this.patch(this.state.cid, (c) => this.move(c.modules.filter((x) => x.id === mid)[0].lessons, i, d));
+
+  openRename = (kind, id, val, mid) => this.setState({ rename: { kind: kind, id: id, mid: mid }, renameVal: val });
+  applyRename = () => {
+    const r = this.state.rename, v = this.state.renameVal.trim();
+    if (!r || !v) { this.setState({ rename: null }); return; }
+    this.patch(this.state.cid, (c) => {
+      if (r.kind === 'module') c.modules.filter((m) => m.id === r.id)[0].title = v;
+      if (r.kind === 'lesson') c.modules.forEach((m) => m.lessons.forEach((l) => { if (l.id === r.id) l.title = v; }));
+      if (r.kind === 'topics') c.modules.forEach((m) => m.lessons.forEach((l) => { if (l.id === r.id) l.topics = v; }));
+      if (r.kind === 'material') c.modules.forEach((m) => m.lessons.forEach((l) => l.materials.forEach((f) => { if (f.id === r.id) f.name = v; })));
+    });
+    this.setState({ rename: null });
+    this.flash('Renamed');
+  };
+
+  addMaterial = (type) => {
+    const id = this.uid('f'), names = { video: 'New video lesson.mp4', pdf: 'Notes.pdf', doc: 'Worksheet.docx', ppt: 'Slides.pptx', image: 'Diagram.png', audio: 'Listening track.mp3', other: 'Resource.zip' };
+    this.patch(this.state.cid, (c) => {
+      c.modules.forEach((m) => m.lessons.forEach((l) => { if (l.id === this.state.lid) l.materials.push({ id: id, name: names[type], type: type, status: 'uploading' }); }));
+    });
+    this.setState({ picker: false });
+    setTimeout(() => {
+      this.patch(this.state.cid, (c) => c.modules.forEach((m) => m.lessons.forEach((l) => l.materials.forEach((f) => { if (f.id === id) f.status = 'ready'; }))));
+      this.flash('Upload complete');
+    }, 1500);
+  };
+
+  replaceMaterial = (fid) => {
+    this.patch(this.state.cid, (c) => c.modules.forEach((m) => m.lessons.forEach((l) => l.materials.forEach((f) => { if (f.id === fid) f.status = 'uploading'; }))));
+    setTimeout(() => {
+      this.patch(this.state.cid, (c) => c.modules.forEach((m) => m.lessons.forEach((l) => l.materials.forEach((f) => { if (f.id === fid) { f.status = 'ready'; f.name = f.name.replace(/(\.\w+)$/, ' (v2)$1'); } }))));
+      this.flash('File replaced');
+    }, 1400);
+  };
+
+  deleteMaterial = (fid) => this.patch(this.state.cid, (c) => c.modules.forEach((m) => m.lessons.forEach((l) => { l.materials = l.materials.filter((f) => f.id !== fid); })));
+
+  toggleLessonPub = (lid) => {
+    let now = false;
+    this.patch(this.state.cid, (c) => c.modules.forEach((m) => m.lessons.forEach((l) => { if (l.id === lid) { l.published = !l.published; now = l.published; } })));
+    this.flash(now ? 'Lesson visible to enrolled students' : 'Lesson hidden from students');
+  };
+
+  go = (screen, extra) => this.setState(Object.assign({ screen }, extra || {}));
+  fmt = (n) => n.toLocaleString('en-KE');
+
+  pickOpt = (i) => { if (this.state.revealed) return; this.setState({ sel: i, revealed: true, score: this.state.score + (i === QS[this.state.qi].a ? 1 : 0) }); };
+
+  quizNext = () => {
+    const { qi, revealed } = this.state;
+    if (!revealed) return;
+    if (qi + 1 >= QS.length) this.setState({ screen: 'sResult' });
+    else this.setState({ qi: qi + 1, sel: null, revealed: false });
+  };
+
+  phoneFmt = (v) => v ? (v.slice(0, 3) + ' ' + v.slice(3, 6) + ' ' + v.slice(6)).trim() : '— — —';
+
+  keys = (val, max, field) => {
+    const base = 'display:flex;align-items:center;justify-content:center;height:48px;border-radius:13px;cursor:pointer;font-family:"DM Mono",monospace;font-size:20px;';
+    const out = ['1', '2', '3', '4', '5', '6', '7', '8', '9'].map((d) => ({
+      label: d, style: base + 'background:#fff;border:1px solid #E1E6EA;color:#0F1A24',
+      tap: () => { if (this.state[field].length < max) this.setState({ [field]: this.state[field] + d }); }
+    }));
+    out.push({ label: 'clear', style: base + 'background:#F4F6F8;color:#8A9AA6;font-family:"Material Symbols Rounded";font-size:22px', tap: () => this.setState({ [field]: '' }) });
+    out.push({ label: '0', style: base + 'background:#fff;border:1px solid #E1E6EA;color:#0F1A24', tap: () => { if (this.state[field].length < max) this.setState({ [field]: this.state[field] + '0' }); } });
+    out.push({ label: 'backspace', style: base + 'background:#F4F6F8;color:#8A9AA6;font-family:"Material Symbols Rounded";font-size:22px', tap: () => this.setState({ [field]: this.state[field].slice(0, -1) }) });
+    return out;
+  };
+
+  navItem = (active, dark) => 'flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;padding:8px 0;min-height:44px;border-radius:12px;cursor:pointer;color:' +
+    (active ? (dark ? '#00A8F0' : '#0B7FB8') : (dark ? 'rgba(255,255,255,.45)' : '#8A9AA6')) +
+    (active ? (dark ? ';background:rgba(0,168,240,.12)' : ';background:#EAF7FE') : '');
+
+  optStyle = (i) => {
+    const { sel, revealed, qi } = this.state;
+    const correct = QS[qi].a;
+    let border = '#E1E6EA', bg = '#fff';
+    if (revealed && i === correct) { border = '#1E7A3D'; bg = '#EDF9F1'; }
+    else if (revealed && i === sel) { border = '#C9151C'; bg = '#FDE7E8'; }
+    else if (!revealed) { border = '#E1E6EA'; }
+    else { bg = '#F8FAFB'; }
+    return 'display:flex;align-items:center;gap:13px;padding:16px;border-radius:15px;background:' + bg + ';border:1.6px solid ' + border + ';cursor:pointer;color:#0F1A24;min-height:44px;box-sizing:border-box';
+  };
+
+  railStyle = (active) => 'display:flex;align-items:center;gap:9px;padding:9px 11px;border-radius:9px;cursor:pointer;font-size:12.5px;line-height:1.2;' +
+    (active ? 'background:#0F1A24;color:#fff;font-weight:500' : 'background:#fff;color:#3A4A56;border:1px solid rgba(15,26,36,.07)');
+
+  renumber = (cs) => cs.map((c, i) => Object.assign({}, c, { num: String(i + 1) }));
+  reorderCats = (i, d) => {
+    const cs = this.state.cats.slice(); const j = i + d;
+    if (j < 0 || j >= cs.length) return;
+    const t = cs[i]; cs[i] = cs[j]; cs[j] = t;
+    this.setState({ cats: this.renumber(cs) });
+  };
+
+  catVals(s) {
+    const st = this.state, fm = st.form;
+    const chip = (on, color) => 'flex:none;padding:9px 14px;border-radius:99px;cursor:pointer;font-size:12.5px;font-weight:500;min-height:38px;display:flex;align-items:center;box-sizing:border-box;' +
+      (on ? 'background:' + (color || '#0F1A24') + ';color:#fff' : 'background:#fff;border:1px solid rgba(15,26,36,.12);color:#5B6B78');
+    const allItems = [];
+    st.cats.forEach((g) => g.items.forEach((it) => allItems.push(Object.assign({ group: g.id, groupName: g.name, color: g.color }, it))));
+    const itemOf = (id) => allItems.filter((i) => i.id === id)[0];
+    const label = (t) => { const it = itemOf(t.item); return it ? (it.subs.length && t.sub !== it.name ? it.groupName + ' \u2192 ' + it.name + ' \u2192 ' + t.sub : it.groupName + ' \u2192 ' + it.name) : t.sub; };
+    const nTeach = (id) => TEACHERS.filter((t) => t.item === id).length;
+
+    const filtered = TEACHERS.filter((t) => (!st.fItem || t.item === st.fItem) && (!st.fSub || t.sub === st.fSub) && (!st.fFree || t.price === 0));
+    const activeItem = itemOf(st.fItem);
+    const formItem = itemOf(fm.cat);
+    const formGroup = st.cats.filter((g) => g.id === fm.grp)[0];
+
+    const teacherCard = (t) => ({
+      n: t.n, b: t.b, badge: t.v ? 'verified' : 'pending', badgeColor: t.v ? '#1E7A3D' : '#8A9AA6',
+      rating: t.rev ? t.r + ' \u2605 (' + t.rev + ')' : 'New teacher',
+      priceLabel: t.price ? 'KES ' + this.fmt(t.price) + BILL(t.bill).short : 'Free',
+      priceColor: t.price ? '#B3520A' : '#1E7A3D',
+      meta: t.lvl + ' \u00b7 ' + t.age + ' \u00b7 ' + t.loc,
+      catLabel: label(t),
+      thumbStyle: 'width:48px;height:48px;flex:none;border-radius:15px;background:repeating-linear-gradient(135deg,' + t.tint + ' 0 7px,rgba(0,0,0,.25) 7px 14px);display:flex;align-items:flex-end;justify-content:center;padding-bottom:3px',
+      unlocked: !!st.paid[t.n], locked: !st.paid[t.n],
+      viewPrice: () => this.setState({ screen: 'sPrice', role: 'student', copied: false,
+        tillStep: st.paid[t.n] ? 3 : 0,
+        co: { teacher: t.n, title: t.sub + ' with ' + t.n, blurb: t.b, amount: t.price, bill: t.bill, tint: t.tint, item: t.sub, lvl: t.lvl, age: t.age, loc: t.loc } }),
+      open: () => this.setState({ screen: 'sPay', payStep: 0, payPhone: '', pin: '',
+        co: { teacher: t.n, title: t.sub + ' with ' + t.n, blurb: t.b, amount: t.price, bill: t.bill, tint: t.tint } })
+    });
+
+    return {
+      s_aCats: s === 'aCats', s_tCourses: s === 'tCourses',
+      coTitle: st.co.title, coTeacher: st.co.teacher, coBlurb: st.co.blurb,
+      coAmount: this.fmt(st.co.amount),
+      coBillLabel: st.co.amount ? BILL(st.co.bill).student : 'Free access',
+      coIsFree: !st.co.amount, coIsPaid: !!st.co.amount,
+      coFreeSub: 'This course is free. ' + st.co.teacher + ' publishes it openly on MTH \u2014 no payment, no M-PESA prompt.',
+      enrolFree: () => this.setState({ payStep: 3 }),
+      coSubtext: 'You are paying ' + st.co.teacher + ' through MTH. The moment payment is confirmed, your access will be activated.',
+      coDoneTitle: st.co.amount ? 'You\u2019re enrolled!' : 'You\u2019re in \u2014 free access',
+      coReceiptLabel: st.co.amount ? 'RECEIPT' : 'ENROLMENT',
+      coPayLabel: 'Pay KES ' + this.fmt(st.co.amount) + ' via M-PESA',
+
+      coHeroStyle: 'margin-top:18px;padding:18px;border-radius:18px;background:repeating-linear-gradient(135deg,' + (st.co.tint || '#0B7FB8') + ' 0 10px,rgba(0,0,0,.28) 10px 20px)',
+      lockedBody: st.co.amount
+        ? 'Tap below to see the fee for this activity and the M-PESA Till Number to pay it.'
+        : 'Tap below to see what this activity costs and how to join.',
+      tillNo: '834 570',
+      tillDoneTitle: st.co.amount ? 'Payment confirmed' : 'You\u2019re enrolled \u2014 free',
+      tillDoneBody: st.co.amount
+        ? 'KES ' + this.fmt(st.co.amount) + ' received on Till 834 570. Your place is unlocked.'
+        : st.co.teacher + ' publishes this activity free on MTH. No payment needed \u2014 your place is confirmed.',
+      tillLocked: st.tillStep === 0, tillOpen: st.tillStep === 1 && !!st.co.amount, tillFree: st.tillStep === 1 && !st.co.amount,
+      tillChecking: st.tillStep === 2, tillDone: st.tillStep === 3,
+      enrolFreeNow: () => { const paid = Object.assign({}, st.paid); paid[st.co.teacher] = true; this.setState({ tillStep: 3, paid: paid }); },
+      revealPrice: () => this.setState({ tillStep: 1 }),
+      copyIcon: st.copied ? 'check' : 'content_copy',
+      copyLabel: st.copied ? 'Copied' : 'Copy',
+      copyColor: st.copied ? '#7FE3A6' : '#fff',
+      copyTill: () => { this.setState({ copied: true }); setTimeout(() => this.setState({ copied: false }), 1600); },
+      tillSteps: [
+        { n: '1', text: 'Open M-PESA on your phone and choose Lipa na M-PESA \u2192 Buy Goods and Services.' },
+        { n: '2', text: 'Enter Till Number 834 570 (MODERN TALENT HUB).' },
+        { n: '3', text: 'Enter the amount KES ' + this.fmt(st.co.amount) + ' exactly \u2014 the amount is how we match your payment.' },
+        { n: '4', text: 'Enter your M-PESA PIN and confirm.' },
+        { n: '5', text: 'Come back and tap \u201cI have paid\u201d \u2014 MTH confirms it automatically.' }
+      ],
+      tillPaid: () => { this.setState({ tillStep: 2 }); setTimeout(() => {
+        if (this.state.tillStep !== 2) return;
+        const paid = Object.assign({}, this.state.paid); paid[this.state.co.teacher] = true;
+        this.setState({ tillStep: 3, paid: paid });
+      }, 2400); },
+      enrolRows: (function (co, fmt) {
+        const row = (k, v, color, last) => ({ k: k, v: v, color: color || '#0F1A24',
+          style: 'display:flex;justify-content:space-between;gap:14px;padding:9px 0' + (last ? '' : ';border-bottom:1px solid rgba(15,26,36,.08)') });
+        return [
+          row('Activity', co.item || co.title),
+          row('Teacher', co.teacher),
+          row('Amount paid', co.amount ? 'KES ' + fmt(co.amount) : 'Free \u2014 no payment', '#1E7A3D'),
+          row('Billing', BILL(co.bill).student),
+          row('Till number', co.amount ? '834 570' : 'n/a'),
+          row('Learner level', (co.lvl || 'All levels') + ' \u00b7 ' + (co.age || '')),
+          row('Venue', co.loc || 'Nairobi'),
+          row('Status', 'Enrolled \u00b7 access active', '#1E7A3D', true)
+        ];
+      })(st.co, this.fmt),
+
+      /* --- marketplace: four numbered groups --- */
+      groups: st.cats.map((g) => ({
+        num: g.num, name: g.name,
+        numStyle: 'width:26px;height:26px;flex:none;border-radius:8px;background:' + g.color + ';display:flex;align-items:center;justify-content:center;font-family:Archivo,sans-serif;font-weight:800;font-size:13px;color:#fff',
+        rule: 'flex:1;height:1px;background:rgba(15,26,36,.1)',
+        items: g.items.map((it) => ({
+          name: it.name, icon: it.icon,
+          count: (function (n) { return n + (n === 1 ? ' teacher' : ' teachers'); })(nTeach(it.id)),
+          subLine: it.subs.length ? it.subs.join(' \u00b7 ') : '',
+          hasSubs: it.subs.length > 0,
+          style: 'display:flex;flex-direction:column;gap:9px;padding:14px;border-radius:16px;cursor:pointer;box-sizing:border-box;min-height:104px;justify-content:space-between;background:' + g.color +
+            (st.fItem === it.id ? ';box-shadow:0 0 0 3px rgba(15,26,36,.85)' : ''),
+          pick: () => this.setState({ fItem: it.id, fSub: null })
+        }))
+      })),
+      hasCat: !!activeItem,
+      fCatName: activeItem ? activeItem.groupName + ' \u2192 ' + activeItem.name : 'All categories',
+      subChips: activeItem && activeItem.subs.length
+        ? [{ name: 'All ' + activeItem.name, style: chip(!st.fSub, activeItem.color), pick: () => this.setState({ fSub: null }) }].concat(
+            activeItem.subs.map((sb) => ({ name: sb, style: chip(st.fSub === sb, activeItem.color), pick: () => this.setState({ fSub: sb }) })))
+        : [],
+      clearCat: () => this.setState({ fItem: null, fSub: null }),
+      freeChipStyle: chip(st.fFree, '#1E7A3D'),
+      toggleFree: () => this.setState({ fFree: !st.fFree }),
+      showRevShare: st.role === 'teacher' || st.role === 'admin',
+      isStudentView: st.role === 'student',
+      subjectLessons: LESSONS.map((l, i) => {
+        const done = l.state === 'done', now = l.state === 'now', locked = l.state === 'locked';
+        return {
+          n: i + 1, title: l.title, meta: l.meta,
+          icon: done ? 'check' : locked ? 'lock' : l.icon,
+          iconColor: done ? '#1E7A3D' : now ? '#fff' : locked ? '#8A9AA6' : l.tint,
+          iconWrap: 'width:34px;height:34px;flex:none;border-radius:10px;display:flex;align-items:center;justify-content:center;background:' +
+            (done ? '#E4F5EA' : now ? '#0B7FB8' : locked ? '#EEF1F4' : l.bg),
+          style: 'display:flex;align-items:center;gap:13px;padding:14px;border-radius:14px;box-sizing:border-box;' +
+            (now ? 'background:#EAF7FE;border:1.5px solid #00A8F0;cursor:pointer'
+                 : locked ? 'background:#fff;border:1px solid rgba(15,26,36,.07);opacity:.6'
+                 : 'background:#fff;border:1px solid rgba(15,26,36,.07);cursor:pointer'),
+          titleStyle: 'font-size:13.5px;color:#0F1A24;font-weight:' + (now ? '700' : '500'),
+          metaColor: now ? '#0B6FA4' : locked ? '#8A9AA6' : (l.urgent ? '#C9151C' : '#8A9AA6'),
+          chevron: !locked, chevronColor: now ? '#0B6FA4' : '#8A9AA6',
+          open: locked ? (() => {}) : (() => this.setState({ screen: l.go, role: 'student',
+            qi: 0, sel: null, revealed: false, score: l.go === 'sQuiz' ? 0 : this.state.score }))
+        };
+      }),
+      resultCount: filtered.length + (filtered.length === 1 ? ' teacher' : ' teachers'),
+      hasResults: filtered.length > 0, noResults: filtered.length === 0,
+      emptyTitle: (st.fSub || (activeItem && activeItem.name) || 'No teachers') + ' \u2014 nobody yet',
+      emptyBody: 'No ' + (st.fSub || (activeItem ? activeItem.name : 'matching')) + ' teacher has published on MTH yet. Ask us to recruit one, or browse the rest of ' + (activeItem ? activeItem.groupName : 'the marketplace') + '.',
+      teacherCards: filtered.map(teacherCard),
+
+      /* --- create / edit course --- */
+      groupChips: st.cats.map((g) => ({
+        name: g.num + '. ' + g.name, style: chip(fm.grp === g.id, g.color),
+        pick: () => this.setState({ form: Object.assign({}, fm, { grp: g.id, cat: '', sub: '' }) })
+      })),
+      hasFormGroup: !!formGroup,
+      itemChips: formGroup ? formGroup.items.map((it) => ({
+        name: it.name, icon: it.icon, style: chip(fm.cat === it.id, formGroup.color),
+        pick: () => this.setState({ form: Object.assign({}, fm, { cat: it.id, sub: it.subs.length ? '' : it.name }) })
+      })) : [],
+      hasFormSubs: !!(formItem && formItem.subs.length),
+      subCats: formItem && formItem.subs.length ? formItem.subs.concat(['Other ' + formItem.name]).map((sb) => ({
+        name: sb, style: chip(fm.sub === sb, '#0B7FB8'),
+        pick: () => this.setState({ form: Object.assign({}, fm, { sub: sb }) })
+      })) : [],
+      catPathLabel: formItem
+        ? (formItem.groupName + ' \u2192 ' + formItem.name + (formItem.subs.length ? ' \u2192 ' + (fm.sub || 'choose a subcategory') : ''))
+        : (formGroup ? formGroup.name + ' \u2192 choose an activity' : 'Choose a main category'),
+      catPathStyle: 'display:flex;align-items:center;gap:8px;padding:12px 14px;border-radius:12px;font-size:13px;font-weight:500;' +
+        (formItem && fm.sub ? 'background:#EDF9F1;color:#1E7A3D' : 'background:#FFF8EE;color:#B3520A'),
+      catPathIcon: formItem && fm.sub ? 'check_circle' : 'error',
+      fThumbStyle: 'height:104px;border-radius:16px;background:repeating-linear-gradient(135deg,' + ((formGroup || { color: '#0B7FB8' }).color) + ' 0 10px,rgba(0,0,0,.22) 10px 20px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;cursor:pointer',
+      goACats: () => this.setState({ screen: 'aCats', role: 'admin' }),
+
+      /* --- admin: dynamic groups --- */
+      adminCats: st.cats.map((g, i) => ({
+        name: g.num + '. ' + g.name, rawName: g.name, subCount: g.items.length + (g.items.length === 1 ? ' activity' : ' activities'),
+        subList: g.items.map((it) => it.name + (it.subs.length ? ' (' + it.subs.length + ')' : '')).join(' \u00b7 '),
+        dot: 'width:32px;height:32px;border-radius:10px;flex:none;background:' + g.color + ';display:flex;align-items:center;justify-content:center;font-family:Archivo,sans-serif;font-weight:800;font-size:14px;color:#fff',
+        num: g.num, icon: 'category',
+        isEditing: st.editCat === g.id,
+        startEdit: () => this.setState({ editCat: g.id }),
+        onName: (e) => { const cs = this.state.cats.slice(); cs[i] = Object.assign({}, cs[i], { name: e.target.value }); this.setState({ cats: cs }); },
+        doneEdit: () => this.setState({ editCat: null }),
+        up: () => this.reorderCats(i, -1), down: () => this.reorderCats(i, 1),
+        del: () => this.ask('Remove the \u201c' + g.name + '\u201d group and its ' + g.items.length + ' activities? Courses using it become uncategorised. This action cannot be undone.',
+          () => this.setState({ cats: this.renumber(this.state.cats.filter((x) => x.id !== g.id)) }))
+      })),
+      newCat: st.newCat,
+      onNewCat: (e) => this.setState({ newCat: e.target.value }),
+      addCat: () => {
+        const nm = (st.newCat || '').trim(); if (!nm) return;
+        const palette = ['#8A5AB8', '#0B8F6A', '#B3520A', '#3A4A56'];
+        this.setState({ newCat: '', cats: this.renumber(this.state.cats.concat([
+          { id: 'g' + Math.random().toString(36).slice(2, 6), num: '', name: nm, color: palette[this.state.cats.length % palette.length], items: [{ id: 'i' + Math.random().toString(36).slice(2, 6), name: 'Other ' + nm, icon: 'category', subs: [] }] }
+        ])) });
+      },
+      addCatStyle: 'padding:13px 18px;border-radius:12px;font-family:Archivo,sans-serif;font-weight:700;font-size:13.5px;cursor:pointer;white-space:nowrap;' + ((st.newCat || '').trim() ? 'background:#0B7FB8;color:#fff' : 'background:#E4E9ED;color:#5B6B78')
+    };
+  }
+
+  renderVals() {
+    const s = this.state.screen, st = this.state;
+    const price = st.courseType === 'free' ? 0 : st.price;
+    const mk = (n, label, id, role) => ({ n, label, style: this.railStyle(s === id), go: () => this.go(id, role ? { role } : null) });
+
+    const rail = [
+      { title: 'AUTH', items: [mk('01', 'Splash & role choice', 'role'), mk('02', 'Login', 'login')] },
+      { title: 'STUDENT', items: [
+        mk('03', 'Home dashboard', 'sHome', 'student'), mk('04', 'Marketplace · find a teacher', 'sDiscover', 'student'),
+        mk('05', 'Course: Mathematics', 'sSubject', 'student'),
+        mk('06', 'Lesson + downloads', 'sLesson', 'student'), mk('07', 'Quiz', 'sQuiz', 'student'),
+        mk('08', 'Quiz result', 'sResult', 'student'), mk('09', 'Assignment upload', 'sAssign', 'student'),
+        mk('10', 'View Price · M-PESA Till', 'sPrice', 'student'),
+        mk('11', 'Checkout · M-PESA STK push', 'sPay', 'student'), mk('12', 'Progress & certificate', 'sProgress', 'student')] },
+      { title: 'TEACHER', items: [
+        mk('12', 'Dashboard & wallet', 'tHome', 'teacher'), mk('13', 'My Courses', 'tCourses', 'teacher'),
+        { n: '14', label: 'Create / edit course', style: this.railStyle(s === 'tCreate'), go: this.newCourse },
+        mk('15', 'Manage content \u00b7 modules', 'tBuilder', 'teacher'), mk('16', 'Lesson & uploads', 'tLesson', 'teacher'),
+        mk('17', 'Teacher menu (10 sections)', 'tMenu', 'teacher'), mk('18', 'Wallet & transactions', 'tWallet', 'teacher'),
+        mk('19', 'Withdraw to M-PESA', 'tWithdraw', 'teacher'), mk('20', 'My students', 'tStudents', 'teacher')] },
+      { title: 'ADMIN', items: [
+        mk('21', 'Platform overview', 'aHome', 'admin'), mk('22', 'Users', 'aUsers', 'admin'),
+        mk('23', 'Transactions & payouts', 'aTx', 'admin'), mk('24', 'Categories (dynamic)', 'aCats', 'admin')] }
+    ];
+
+    const dark = st.role === 'admin';
+    return Object.assign({
+      rail,
+      s_role: s === 'role', s_login: s === 'login', s_sHome: s === 'sHome', s_sSubject: s === 'sSubject',
+      s_sLesson: s === 'sLesson', s_sQuiz: s === 'sQuiz', s_sResult: s === 'sResult', s_sAssign: s === 'sAssign',
+      s_sPay: s === 'sPay', s_sPrice: s === 'sPrice', s_sProgress: s === 'sProgress', s_tHome: s === 'tHome', s_tCreate: s === 'tCreate',
+      s_tPublish: s === 'tPublish', s_tWallet: s === 'tWallet', s_tWithdraw: s === 'tWithdraw',
+      s_tStudents: s === 'tStudents', s_aHome: s === 'aHome', s_aUsers: s === 'aUsers', s_aTx: s === 'aTx',
+
+      navStudent: st.role === 'student' && ['sHome', 'sDiscover', 'sSubject', 'sLesson', 'sAssign', 'sProgress', 'sResult'].indexOf(s) > -1,
+      navTeacher: st.role === 'teacher' && ['tHome', 'tCourses', 'tWallet', 'tStudents', 'tBuilder', 'tMenu', 'tProfile', 'tMaterials', 'tMessages', 'tSettings'].indexOf(s) > -1,
+      navAdmin: st.role === 'admin' && ['aHome', 'aUsers', 'aTx', 'aCats'].indexOf(s) > -1,
+      nav1: this.navItem(s === 'sHome'), nav2: this.navItem(s === 'sDiscover'), nav3: this.navItem(s === 'sSubject' || s === 'sLesson'), nav4: this.navItem(s === 'sAssign'), nav5: this.navItem(s === 'sProgress'),
+      tnav1: this.navItem(s === 'tHome'), tnav2: this.navItem(s === 'tCreate'), tnav3: this.navItem(s === 'tStudents'), tnav4: this.navItem(s === 'tWallet'), tnav5: this.navItem(s === 'tCourses'), tnav6: this.navItem(s === 'tMenu' || s === 'tProfile' || s === 'tMaterials' || s === 'tMessages' || s === 'tSettings'),
+      anav1: this.navItem(s === 'aHome', dark), anav2: this.navItem(s === 'aUsers', dark), anav3: this.navItem(s === 'aTx', dark), anav4: this.navItem(s === 'aCats', dark),
+
+      loginStudent: () => this.go('login', { role: 'student' }),
+      loginTeacher: () => this.go('login', { role: 'teacher' }),
+      loginAdmin: () => this.go('aHome', { role: 'admin' }),
+      loginRoleLabel: st.role === 'teacher' ? 'SIGNING IN AS TEACHER' : 'SIGNING IN AS STUDENT',
+      doLogin: () => this.go(st.role === 'teacher' ? 'tHome' : 'sHome'),
+      goRole: () => this.go('role'),
+      goSHome: () => this.go('sHome', { role: 'student' }),
+      goSubject: () => this.go('sSubject', { role: 'student' }),
+      goLesson: () => this.go('sLesson', { role: 'student' }),
+      goQuiz: () => this.go('sQuiz', { role: 'student', qi: 0, sel: null, revealed: false, score: 0 }),
+      goAssign: () => this.go('sAssign', { role: 'student' }),
+      goPay: () => this.go('sPay', { role: 'student', payStep: 0, payPhone: '', pin: '' }),
+      goPayKarate: () => this.go('sPay', { role: 'student', payStep: 0, payPhone: '', pin: '',
+        co: { teacher: 'Sensei Samuel Kimani', title: 'Karate with Sensei Samuel Kimani', blurb: '8 live sessions + 14 videos', amount: 500, bill: 'lesson', tint: '#ED1C24' } }),
+      goDiscover: () => this.go('sDiscover', { role: 'student' }),
+      s_sDiscover: s === 'sDiscover',
+      goProgress: () => this.go('sProgress', { role: 'student' }),
+      goTHome: () => this.go('tHome', { role: 'teacher' }),
+      goCreate: this.newCourse,
+      goPublish: () => this.go('tPublish', { role: 'teacher' }),
+      goWallet: () => this.go('tWallet', { role: 'teacher' }),
+      goWithdraw: () => this.go('tWithdraw', { role: 'teacher', wdDone: false }),
+      goTStudents: () => this.go('tStudents', { role: 'teacher' }),
+      goAHome: () => this.go('aHome', { role: 'admin' }),
+      goAUsers: () => this.go('aUsers', { role: 'admin' }),
+      goATx: () => this.go('aTx', { role: 'admin' }),
+
+      playing: st.playing, playIcon: st.playing ? 'pause' : 'play_arrow',
+      togglePlay: () => this.setState({ playing: !st.playing }),
+      download: () => this.setState({ downloaded: true }),
+      dlIcon: st.downloaded ? 'check_circle' : 'download',
+      dlColor: st.downloaded ? '#1E7A3D' : '#5B6B78',
+
+      quizCount: (st.qi + 1) + '/' + QS.length,
+      quizPct: Math.round(((st.qi + (st.revealed ? 1 : 0)) / QS.length) * 100) + '%',
+      qText: QS[st.qi].q,
+      qOpts: QS[st.qi].opts.map((t, i) => {
+        const isC = st.revealed && i === QS[st.qi].a, isW = st.revealed && i === st.sel && i !== QS[st.qi].a;
+        return {
+          text: t, key: String.fromCharCode(65 + i), pick: () => this.pickOpt(i), style: this.optStyle(i),
+          keyStyle: 'width:28px;height:28px;flex:none;border-radius:9px;display:flex;align-items:center;justify-content:center;font-family:"DM Mono",monospace;font-size:12px;background:' +
+            (isC ? '#1E7A3D;color:#fff' : isW ? '#C9151C;color:#fff' : '#F4F6F8;color:#5B6B78'),
+          mark: isC ? 'check' : isW ? 'close' : '', markColor: isC ? '#1E7A3D' : '#C9151C'
+        };
+      }),
+      quizNext: this.quizNext,
+      quizBtnBg: st.revealed ? '#0B7FB8' : '#E4E9ED',
+      quizBtnFg: st.revealed ? '#fff' : '#5B6B78',
+      submitFg: st.uploaded ? '#fff' : '#5B6B78',
+      quizBtnLabel: st.revealed ? (st.qi + 1 >= QS.length ? 'See my result' : 'Next question') : 'Choose an answer',
+      scorePct: Math.round((st.score / QS.length) * 100) + '%',
+      scoreText: st.score + ' of ' + QS.length,
+
+      uploaded: st.uploaded,
+      upIcon: st.uploaded ? 'task_alt' : 'cloud_upload',
+      upIconColor: st.uploaded ? '#1E7A3D' : '#0B7FB8',
+      upBorder: st.uploaded ? '#1E7A3D' : '#C6D9E6',
+      upBg: st.uploaded ? '#EDF9F1' : '#F7FBFD',
+      upTitle: st.uploaded ? 'Ready to submit' : 'Add your work',
+      upSub: st.uploaded ? '1 file attached · JPG' : 'Photo, PDF or Word · max 25 MB',
+      upBtn: st.uploaded ? 'Add another file' : 'Choose file',
+      pickFile: () => this.setState({ uploaded: true }),
+      submitAssign: () => this.setState({ submitted: true, screen: 'sSubject' }),
+      submitBg: st.uploaded ? '#0B7FB8' : '#E4E9ED',
+      submitLabel: st.uploaded ? 'Submit assignment' : 'Attach a file first',
+
+      p_form: st.payStep === 0, p_pin: st.payStep === 1, p_wait: st.payStep === 2, p_done: st.payStep === 3,
+      phoneDisplay: this.phoneFmt(st.payPhone),
+      phoneBorder: st.payPhone.length === 9 ? '#1E7A3D' : '#E1E6EA',
+      phoneOkIcon: st.payPhone.length === 9 ? 'check_circle' : 'edit',
+      phoneOkColor: st.payPhone.length === 9 ? '#1E7A3D' : '#8A9AA6',
+      phoneHint: st.payPhone.length === 9 ? 'Safaricom line · ready' : 'Type the 9 digits after +254, e.g. 712 345 678',
+      padKeys: this.keys(st.payPhone, 9, 'payPhone'),
+      payBtnBg: st.payPhone.length === 9 ? '#1E7A3D' : '#E4E9ED',
+      payBtnFg: st.payPhone.length === 9 ? '#fff' : '#5B6B78',
+      payStart: () => { if (st.payPhone.length === 9) this.setState({ payStep: 1, pin: '' }); },
+      pinKeys: this.keys(st.pin, 4, 'pin'),
+      pinDots: [0, 1, 2, 3].map((i) => ({ style: 'width:16px;height:16px;border-radius:50%;background:' + (i < st.pin.length ? '#1E7A3D' : '#D8E0E6') })),
+      pinHint: st.pin.length === 4 ? 'READY TO CONFIRM' : 'ENTER 4-DIGIT M-PESA PIN',
+      pinBtnBg: st.pin.length === 4 ? '#1E7A3D' : '#E4E9ED',
+      pinBtnFg: st.pin.length === 4 ? '#fff' : '#5B6B78',
+      pinConfirm: () => {
+        if (st.pin.length !== 4) return;
+        this.setState({ payStep: 2 });
+        setTimeout(() => { if (this.state.payStep === 2) this.setState({ payStep: 3 }); }, 1900);
+      },
+
+      isPaid: st.courseType === 'paid', isFree: st.courseType === 'free',
+      setPaid: () => this.setState({ courseType: 'paid' }), setFree: () => this.setState({ courseType: 'free' }),
+      freeStyle: 'flex:1;padding:16px;border-radius:16px;cursor:pointer;box-sizing:border-box;' + (st.courseType === 'free' ? 'background:#0B7FB8;color:#fff;border:1.6px solid #0B7FB8' : 'background:#fff;color:#0F1A24;border:1.6px solid #E1E6EA'),
+      paidStyle: 'flex:1;padding:16px;border-radius:16px;cursor:pointer;box-sizing:border-box;' + (st.courseType === 'paid' ? 'background:#0B7FB8;color:#fff;border:1.6px solid #0B7FB8' : 'background:#fff;color:#0F1A24;border:1.6px solid #E1E6EA'),
+      price: this.fmt(price), priceRaw: st.price,
+      onPrice: (e) => this.setState({ price: parseInt(e.target.value, 10) }),
+      cut70: this.fmt(Math.round(price * 0.7)), cut30: this.fmt(Math.round(price * 0.3)),
+      proj: this.fmt(Math.round(price * 0.7 * 100)),
+
+      balance: this.fmt(st.balance), wdAmt: this.fmt(st.wdAmt),
+      w_form: !st.wdDone, w_done: st.wdDone,
+      wd5: () => this.setState({ wdAmt: 5000 }), wd20: () => this.setState({ wdAmt: 20000 }),
+      wdAll: () => this.setState({ wdAmt: st.balance }),
+      wdSubmit: () => this.setState({ wdDone: true, balance: Math.max(0, st.balance - st.wdAmt) })
+    }, this.catVals(s));
+  }
+}
+
+</script>
+
+
+</body></html>
